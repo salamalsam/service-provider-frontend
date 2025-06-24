@@ -1,0 +1,88 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Single Services page.
+*/
+
+@import url(theme-root.css);
+
+.main-page-content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.breadcrumb ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.breadcrumb ul li{
+    list-style: none;
+}
+
+.breadcrumb ul li a{
+    text-decoration: none;
+    color: #374151;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.breadcrumb ul li a svg{
+    margin-top: 3px;
+}
+
+.breadcrumb ul li a span{
+    padding-top: 7px;
+}
+
+.breadcrumb ul li:last-child a{
+    color: #6B7280;
+}
+
+.single-services-hero-section{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.single-services-category{
+    padding: 2px 10px;
+    border-radius: 4px;
+    background-color: #DCFCE7;
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.rating-text{
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+    padding-left: 5px;
+}
+
+.single-services-title{
+    font-family: var(--nunito-font-family);
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--prominent-text);
+    margin: 10px 0px;
+}
+
+.single-services-description{
+     font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+}

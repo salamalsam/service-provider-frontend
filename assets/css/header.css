@@ -1,0 +1,189 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Header.
+*/
+
+@import url(theme-root.css);
+
+header {
+    background-color: #FFFFFF1F;
+    padding: 16px 0px;
+    backdrop-filter: blur(12px);
+}
+
+.header-bar {
+    position: relative;
+    z-index: 2;
+}
+
+.nav-logo {
+    width: 20%;
+}
+
+.nav-logo img {
+    width: 154px;
+}
+
+.menu-bar {
+    width: 60%;
+}
+
+.navbar-custom input[type="checkbox"],
+.navbar-custom .hamburger-lines {
+    display: none;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1rem;
+    padding: 8px 10px;
+    line-height: 0px;
+}
+
+.menu-items li:first-child {
+    margin-left: 0px;
+}
+
+.navbar-custom a {
+    font-family: var(--inter-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--off-text);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom a:hover {
+    color: var(--normal-text);
+}
+
+.head-profile-section {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-message {
+    border: none;
+}
+
+.profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.profile-btn {
+    border: none;
+
+}
+
+@media (max-width: 768px) {
+    .navbar-custom {
+        opacity: 0.95;
+    }
+
+    .navbar-container .hamburger-lines {
+        display: block;
+    }
+
+    .navbar-container {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container .hamburger-lines {
+        display: block;
+        height: 24px;
+        width: 28px;
+        position: absolute;
+        top: 22px;
+        right: 60px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--off-bg);
+    }
+
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-custom .menu-items {
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        overflow: scroll;
+        justify-content: start;
+        padding-top: 45px;
+        top: -16px;
+    }
+
+    .open-header-menu {
+        transform: translate(-17%) !important;
+        position: relative;
+        z-index: 99;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+    .menu-items li{
+        margin-left: 0px;
+        
+    }
+    .navbar-custom a{
+        color: var(--primary-text);
+    }
+
+}
+
+@media (max-width: 500px) {}

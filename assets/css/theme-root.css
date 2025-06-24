@@ -1,0 +1,103 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains the base rooting of the whole website theme, colors and font styles are defined here, update colors here instead of whole files.
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Colors */
+    --primary-text: #2F8482;
+    --light-secondary: #C6EBEA;
+    --Text-Secondary: #5F5E62;
+    --secondary-text: #1E40AF;
+    --secondary-text-2: #717171;
+    --Gray-200: #E4E7EC;
+    --Gray-300: #D0D5DD;
+    --link-text: #2F8482;
+    --heading-text: #1D242D;
+    --normal-text: #000;
+    --off-text: #fff;
+    --prominent-text: #111827;
+    --prominent-dark-text: #4B5563;
+    --Primary-Navy: #E5E7EB;
+    --primary-bg: #2F8482;
+    --secondary-bg: #C6EBEA;
+    --link-bg: #2F8482;
+    --normal-bg: #000;
+    --black-shade: #1B1B1F;
+    --off-bg: #fff;
+    --Light-Gray-bg: #FCFCFC;
+    --prominent-bg: #F0F0F0;
+    --prominent-dark-bg: #DBEAFE;
+    --Background-Grey: #ECF8F8;
+    --btn-border: #D5D7DA;
+    --transparent-bg: transparent;
+    --btn-color: #414651;
+    --field-border:#D1D5DB;
+    --footer-text:#535862;
+    --footer-heading: #181D27;
+    --border-1: #E9EAEB;
+    /* Font */
+    --lato-font-family: "Lato", sans-serif;
+    --nunito-font-family: "Nunito", sans-serif;
+    --roboto-font-family: "Roboto", sans-serif;
+    --inter-font-family: "Inter", sans-serif;
+    --poppins-font-family: "Poppins", sans-serif;
+    --base-font-size: 20px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: var(--base-font-size);
+    color: var(--normal-text);
+    background-color: var(--off-bg);
+}
+
+.primary-btn {
+    display: flex;
+    background-color: var(--primary-bg);
+    color: var(--off-text);
+    font-size: 16px;
+    padding: 12px 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-bg);
+    outline: none;
+
+}
+
+.secondary-btn {
+    display: flex;
+    background-color: var(--transparent-bg);
+    color: var(--btn-color);
+    font-size: 16px;
+    padding: 12px 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 2px solid var(--btn-border);
+    outline: none;
+
+}
+
+.primary-btn:hover {
+    background-color: var(--transparent-bg);
+    color: var(--primary-text);
+    border: 2px solid var(--primary-bg);
+}
+
+.bg-transaprent {
+    background: transparent;
+}

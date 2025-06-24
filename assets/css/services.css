@@ -1,0 +1,250 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Services page.
+*/
+
+@import url(theme-root.css);
+
+.services-hero-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services-hero-title {
+    font-family: var(--lato-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #303034;
+}
+
+.services-hero-description {
+    font-family: var(--lato-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--normal-text);
+    margin: 20px 0px 30px;
+}
+
+.filter-section {
+    padding: 16px 24px;
+    box-shadow: 0px 10px 30px #0000000A;
+    border: 0.2px solid var(--primary-bg);
+}
+
+.filter-box {
+    gap: 20px;
+}
+
+.search-filterbox svg {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+}
+
+.search-filterbox input {
+    border: 1px solid #F4F4F4;
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #798388;
+    padding: 7px 10px 7px 50px;
+    width: 290px;
+}
+
+.search-filterbox input:focus {
+    outline: none;
+}
+
+.category-filter select {
+    border: 1px solid #F4F4F4;
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #798388;
+    padding: 7px 10px;
+    width: 105px;
+}
+
+.category-filter select:focus {
+    outline: none;
+}
+
+.apply-filter-btn {
+    background-color: var(--primary-bg);
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--off-text);
+    border: 1px solid var(--primary-bg);
+}
+
+.reset-filter-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid var(--primary-bg);
+    color: var(--primary-bg);
+}
+
+.services-card-section {
+    margin-top: 20px;
+}
+
+.services-title {
+    font-family: var(--lato-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #303034;
+}
+
+.services-result-number {
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #5A5A5A;
+}
+
+.sort-by-select {
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #047827;
+    border: none;
+    width: 94px;
+}
+
+.main-services-box {
+    width: 414px;
+    min-width: 414px;
+    gap: 27px;
+}
+
+.pagination {
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pagination ul li {
+    list-style: none;
+}
+
+.pagination-number,
+.pagination-dots {
+    width: 44px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1E1E1E;
+    padding: 8px;
+}
+
+.pagination-number:hover {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+.pagination-number.active {
+    background-color: var(--primary-bg);
+    color: #fff;
+}
+
+.pagination-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #EBEBEB;
+}
+
+.pagination-btn:hover {
+    background-color: var(--primary-bg);
+}
+
+.pagination-btn:hover a svg path {
+    stroke: #fff;
+}
+
+.pagination-btn a {
+    line-height: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .filter-section .row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .filter-section .col-md-9,
+    .filter-section .col-md-3 {
+        width: 100%;
+    }
+
+    .search-filterbox input {
+        width: 270px;
+    }
+
+    .main-services{
+        gap: 16px;
+    }
+
+    .main-services-box {
+        width: 340px;
+        min-width: 340px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .filter-box{
+        flex-wrap: wrap;
+    }
+
+    .search-filterbox, .search-filterbox input, .category-filter, .category-filter select{
+        width: 100%;
+    }
+    .main-services{
+        padding-left: 0px !important;
+        padding-top: 20px !important;
+    }
+
+    .services-card-section .col-md-6{
+        width: 50%;
+    }
+}

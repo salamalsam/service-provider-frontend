@@ -1,0 +1,220 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Authentication and Authorization Views.
+*/
+
+@import url(theme-root.css);
+
+.auth-box {
+    width: 448px;
+    background-color: var(--off-bg);
+    box-shadow: 0px 4px 6px -4px #0000001A;
+    border-radius: 12px;
+    padding: 56px 32px 32px 32px;
+    margin: auto;
+}
+
+.auth-title {
+    font-family: var(--nunito-font-family);
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 800;
+    color: var(--prominent-text);
+    text-align: center;
+}
+
+.auth-description {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+    text-align: center;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--Primary-Navy);
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #1F2937;
+    font-weight: 500;
+    padding: 16px 24px 17.5px 24px;
+    background: var(--transparent-bg);
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid var(--primary-bg);
+}
+
+.custom-fields {
+    width: 100%;
+    padding: 10.4px 12.8px;
+    border: 1px solid var(--field-border);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 0px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.password-field {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid var(--field-border);
+}
+
+.form-check-input:checked {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.form-check-input:focus{
+    box-shadow: none !important;
+}
+
+.customer-type label {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-check-label {
+    color: var(--prominent-text);
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-left: 12px;
+    margin-top: 7px;
+}
+
+.form-check-label a {
+    color: var(--link-text);
+    text-decoration: none;
+}
+
+.forgot-password {
+    color: var(--link-text);
+    text-decoration: none;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.btn-signin {
+    background-color: var(--primary-bg);
+    border: none;
+    border-radius: 6px;
+    color: var(--off-text);
+    padding: 8.8px 16.8px;
+    width: 100%;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #6B7280;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e9ecef;
+    z-index: 1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-google {
+    border: 1px solid var(--field-border);
+    background: var(--transparent-bg);
+    color: #374151;
+    border-radius: 6px;
+    padding: 8.8px 16.8px;
+    width: 100%;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.signup-email {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.signup-password {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.signup-confirm-password {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid var(--field-border);
+}
+
+ @media (max-width: 480px) {
+    .auth-box{
+        width: 340px;
+    }
+    .signup-form-check-input{
+        width: 1.2em;
+    }
+ }
