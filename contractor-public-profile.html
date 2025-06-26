@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/single-services.css">
+    <link rel="stylesheet" href="./assets/css/contractor-public-profile.css">
+
+    <title>Contractor Public Profile</title>
+</head>
+
+<body>
+
+    <div class="main-page-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <ul class="ps-0">
+                    <li>
+                        <a href="" class="d-flex align-items-center gap-2">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3032_21482)">
+                                    <path
+                                        d="M9.36544 2.63441C9.21542 2.48443 9.01197 2.40018 8.79984 2.40018C8.58771 2.40018 8.38426 2.48443 8.23424 2.63441L2.63424 8.23441C2.48851 8.38529 2.40788 8.58737 2.4097 8.79713C2.41152 9.00688 2.49566 9.20753 2.64398 9.35586C2.79231 9.50419 2.99296 9.58832 3.20272 9.59015C3.41247 9.59197 3.61456 9.51133 3.76544 9.36561L3.99984 9.13121V14.4C3.99984 14.6122 4.08412 14.8157 4.23415 14.9657C4.38418 15.1157 4.58766 15.2 4.79984 15.2H6.39984C6.61201 15.2 6.81549 15.1157 6.96552 14.9657C7.11555 14.8157 7.19984 14.6122 7.19984 14.4V12.8C7.19984 12.5878 7.28412 12.3843 7.43415 12.2343C7.58418 12.0843 7.78766 12 7.99984 12H9.59984C9.81201 12 10.0155 12.0843 10.1655 12.2343C10.3156 12.3843 10.3998 12.5878 10.3998 12.8V14.4C10.3998 14.6122 10.4841 14.8157 10.6342 14.9657C10.7842 15.1157 10.9877 15.2 11.1998 15.2H12.7998C13.012 15.2 13.2155 15.1157 13.3655 14.9657C13.5156 14.8157 13.5998 14.6122 13.5998 14.4V9.13121L13.8342 9.36561C13.9851 9.51133 14.1872 9.59197 14.397 9.59015C14.6067 9.58832 14.8074 9.50419 14.9557 9.35586C15.104 9.20753 15.1882 9.00688 15.19 8.79713C15.1918 8.58737 15.1112 8.38529 14.9654 8.23441L9.36544 2.63441Z"
+                                        fill="#374151" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3032_21482">
+                                        <rect width="16" height="16" fill="white"
+                                            transform="translate(0.799805 0.800003)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.551539 12.4484C0.326574 12.2234 0.200195 11.9182 0.200195 11.6C0.200195 11.2818 0.326574 10.9766 0.551539 10.7516L4.50314 6.8L0.551539 2.8484C0.33295 2.62208 0.211996 2.31896 0.21473 2.00432C0.217464 1.68969 0.343667 1.38871 0.566157 1.16622C0.788647 0.943733 1.08962 0.81753 1.40426 0.814796C1.71889 0.812062 2.02202 0.933016 2.24834 1.15161L7.04834 5.95161C7.2733 6.17664 7.39968 6.48181 7.39968 6.8C7.39968 7.1182 7.2733 7.42337 7.04834 7.64841L2.24834 12.4484C2.02331 12.6734 1.71814 12.7997 1.39994 12.7997C1.08174 12.7997 0.776572 12.6734 0.551539 12.4484Z"
+                                fill="#9CA3AF" />
+                        </svg>
+                    </li>
+                    <li><a href="">Services</a></li>
+                    <li>
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.551539 12.4484C0.326574 12.2234 0.200195 11.9182 0.200195 11.6C0.200195 11.2818 0.326574 10.9766 0.551539 10.7516L4.50314 6.8L0.551539 2.8484C0.33295 2.62208 0.211996 2.31896 0.21473 2.00432C0.217464 1.68969 0.343667 1.38871 0.566157 1.16622C0.788647 0.943733 1.08962 0.81753 1.40426 0.814796C1.71889 0.812062 2.02202 0.933016 2.24834 1.15161L7.04834 5.95161C7.2733 6.17664 7.39968 6.48181 7.39968 6.8C7.39968 7.1182 7.2733 7.42337 7.04834 7.64841L2.24834 12.4484C2.02331 12.6734 1.71814 12.7997 1.39994 12.7997C1.08174 12.7997 0.776572 12.6734 0.551539 12.4484Z"
+                                fill="#9CA3AF" />
+                        </svg>
+                    </li>
+                    <li><a>Jean's Trekking Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="cpp-hero-section">
+                <img src="./assets/images/Gradient.png" alt="" class="cpp-hero-section-image">
+                <div class="cpp-profile-img">JT</div>
+                <div class="row px-4 mt-5">
+                    <div class="col-md-9">
+                        <h2 class="cpp-hero-section-title">Jean's Trekking Tours</h2>
+                        <p class="d-flex gap-2 align-items-center">
+                            <span class="cpp-review-rate d-flex align-items-center gap-1">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.23879 3.14153C7.47879 2.40473 8.52119 2.40473 8.76039 3.14153L9.61639 5.77513C9.66869 5.93552 9.77035 6.07527 9.90685 6.17441C10.0433 6.27355 10.2077 6.327 10.3764 6.32713H13.146C13.9212 6.32713 14.2428 7.31913 13.6164 7.77513L11.3764 9.40233C11.2396 9.50155 11.1378 9.64154 11.0855 9.80221C11.0331 9.96288 11.033 10.136 11.0852 10.2967L11.9412 12.9303C12.1812 13.6671 11.3372 14.2807 10.7092 13.8247L8.46919 12.1975C8.33255 12.0983 8.16804 12.0449 7.99919 12.0449C7.83034 12.0449 7.66582 12.0983 7.52919 12.1975L5.28919 13.8247C4.66199 14.2807 3.81879 13.6671 4.05799 12.9303L4.91399 10.2967C4.96613 10.136 4.96603 9.96288 4.91372 9.80221C4.86141 9.64154 4.75956 9.50155 4.62279 9.40233L2.38359 7.77593C1.75719 7.31993 2.07959 6.32793 2.85399 6.32793H5.62279C5.79163 6.32797 5.95615 6.2746 6.09281 6.17545C6.22947 6.07629 6.33125 5.93645 6.38359 5.77593L7.23959 3.14233L7.23879 3.14153Z"
+                                        fill="#FACC15" />
+                                </svg>
+                                4.9
+                            </span>
+                            <span class="cpp-total-reviews d-flex align-items-center gap-1">
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0859375 2.08124V1.76093C0.0859375 1.31301 0.226562 0.943217 0.507812 0.65155C0.794271 0.359884 1.18229 0.21405 1.67188 0.21405C2.16667 0.21405 2.55729 0.359884 2.84375 0.65155C3.13021 0.943217 3.27344 1.31301 3.27344 1.76093V2.08124C3.27344 2.52395 3.13021 2.89113 2.84375 3.1828C2.5625 3.46926 2.17448 3.61249 1.67969 3.61249C1.1901 3.61249 0.802083 3.46926 0.515625 3.1828C0.229167 2.89113 0.0859375 2.52395 0.0859375 2.08124Z"
+                                        fill="#6B7280" />
+                                </svg>
+                                56 reviews
+                            </span>
+                            <span class="cpp-total-reviews d-flex align-items-center gap-1">
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0859375 2.08124V1.76093C0.0859375 1.31301 0.226562 0.943217 0.507812 0.65155C0.794271 0.359884 1.18229 0.21405 1.67188 0.21405C2.16667 0.21405 2.55729 0.359884 2.84375 0.65155C3.13021 0.943217 3.27344 1.31301 3.27344 1.76093V2.08124C3.27344 2.52395 3.13021 2.89113 2.84375 3.1828C2.5625 3.46926 2.17448 3.61249 1.67969 3.61249C1.1901 3.61249 0.802083 3.46926 0.515625 3.1828C0.229167 2.89113 0.0859375 2.52395 0.0859375 2.08124Z"
+                                        fill="#6B7280" />
+                                </svg>
+                                Tour Operator since 2015
+                            </span>
+                        </p>
+                        <span class="cpp-location d-flex align-items-center gap-1">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3033_4248)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.03982 4.03997C5.09008 2.98972 6.51453 2.39969 7.99982 2.39969C9.48511 2.39969 10.9096 2.98972 11.9598 4.03997C13.0101 5.09023 13.6001 6.51469 13.6001 7.99997C13.6001 9.48526 13.0101 10.9097 11.9598 11.96L7.99982 15.92L4.03982 11.96C3.51975 11.44 3.10721 10.8226 2.82574 10.1431C2.54428 9.46367 2.39941 8.73542 2.39941 7.99997C2.39941 7.26452 2.54428 6.53628 2.82574 5.85682C3.10721 5.17735 3.51975 4.55999 4.03982 4.03997ZM7.99982 9.59997C8.42416 9.59997 8.83113 9.4314 9.13119 9.13134C9.43125 8.83129 9.59982 8.42432 9.59982 7.99997C9.59982 7.57563 9.43125 7.16866 9.13119 6.8686C8.83113 6.56855 8.42416 6.39997 7.99982 6.39997C7.57547 6.39997 7.16851 6.56855 6.86845 6.8686C6.56839 7.16866 6.39982 7.57563 6.39982 7.99997C6.39982 8.42432 6.56839 8.83129 6.86845 9.13134C7.16851 9.4314 7.57547 9.59997 7.99982 9.59997Z"
+                                        fill="#9CA3AF" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3033_4248">
+                                        <rect width="16" height="16" fill="white" transform="translate(0 0.799988)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Saint-Denis, Reunion Island
+                        </span>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center">
+                        <a href="#" class="cpp-hero-section-btn d-flex align-items-center gap-1 justify-content-center">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3033_4256)">
+                                    <path
+                                        d="M7.46647 10.8H7.4748M10.7998 10.8H10.8081M14.1331 10.8H14.1415M18.2998 10.8C18.2998 14.4817 14.9415 17.4667 10.7998 17.4667C9.57367 17.4708 8.36213 17.2006 7.25397 16.6758L3.2998 17.4667L4.4623 14.3667C3.72647 13.335 3.2998 12.1117 3.2998 10.8C3.2998 7.11833 6.65814 4.13333 10.7998 4.13333C14.9415 4.13333 18.2998 7.11833 18.2998 10.8Z"
+                                        stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3033_4256">
+                                        <rect width="20" height="20" fill="white"
+                                            transform="translate(0.799805 0.799988)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Chat with Jean
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 justify-content-between">
+                <div class="col-lg-8 col-md-7">
+                    <div class="cpp-about-section">
+                        <h2 class="single-description-title">About</h2>
+                        <p class="single-description-text m-0">
+                            Welcome to Jean's Trekking Tours, your premier guide service for exploring the natural
+                            wonders
+                            of Reunion Island. With over 8 years of experience, we specialize in volcano tours, mountain
+                            treks, and custom adventure experiences.
+                            <br /><br />
+                            Our team of certified guides are experts in local geology, flora, and fauna, ensuring you
+                            not only
+                            have a safe adventure but also learn about our island's unique ecosystem. We pride ourselves
+                            on
+                            sustainable tourism practices and supporting local communities.
+                            <br /><br />
+                            Whether you're a solo traveler, a couple seeking adventure, or a family looking for an
+                            educational
+                            experience, we have the perfect tour for you. All equipment is provided, and we offer tours
+                            in
+                            English, French, and German.
+                        </p>
+                    </div>
+                    <div class="cpp-services-offer mt-4">
+                        <h2 class="single-description-title d-flex align-items-center justify-content-between">Services
+                            Offered <span>4 services</span></h2>
+                        <div class="row mt-4 services-offer-row">
+                            <div class="col-md-4">
+                                <img src="./assets/images/services-offer.png" alt="" class="cpp-services-offer-img">
+                            </div>
+                            <div class="col-md-8">
+                                <span class="services-offer-tag">Tourism</span>
+                                <h3 class="services-offer-title mt-1">Volcano Hiking Tours</h3>
+                                <p class="services-offer-description mb-0">
+                                    Guided tours to Piton de la Fournaise with experienced local
+                                    guides. Equipment provided.
+                                </p>
+                                <div
+                                    class="services-offer-pracing d-flex align-items-center justify-content-between mt-3">
+                                    <p class="d-flex align-items-center gap-3 mb-0">From €75 <span>per person</span></p>
+                                    <a href="#" class="service-offer-btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 services-offer-row">
+                            <div class="col-md-4">
+                                <img src="./assets/images/services-offer.png" alt="" class="cpp-services-offer-img">
+                            </div>
+                            <div class="col-md-8">
+                                <span class="services-offer-tag">Tourism</span>
+                                <h3 class="services-offer-title mt-1">Volcano Hiking Tours</h3>
+                                <p class="services-offer-description mb-0">
+                                    Guided tours to Piton de la Fournaise with experienced local
+                                    guides. Equipment provided.
+                                </p>
+                                <div
+                                    class="services-offer-pracing d-flex align-items-center justify-content-between mt-3">
+                                    <p class="d-flex align-items-center gap-3 mb-0">From €75 <span>per person</span></p>
+                                    <a href="#" class="service-offer-btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 services-offer-row">
+                            <div class="col-md-4">
+                                <img src="./assets/images/services-offer.png" alt="" class="cpp-services-offer-img">
+                            </div>
+                            <div class="col-md-8">
+                                <span class="services-offer-tag">Tourism</span>
+                                <h3 class="services-offer-title mt-1">Volcano Hiking Tours</h3>
+                                <p class="services-offer-description mb-0">
+                                    Guided tours to Piton de la Fournaise with experienced local
+                                    guides. Equipment provided.
+                                </p>
+                                <div
+                                    class="services-offer-pracing d-flex align-items-center justify-content-between mt-3">
+                                    <p class="d-flex align-items-center gap-3 mb-0">From €75 <span>per person</span></p>
+                                    <a href="#" class="service-offer-btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 services-offer-row">
+                            <div class="col-md-4">
+                                <img src="./assets/images/services-offer.png" alt="" class="cpp-services-offer-img">
+                            </div>
+                            <div class="col-md-8">
+                                <span class="services-offer-tag">Tourism</span>
+                                <h3 class="services-offer-title mt-1">Volcano Hiking Tours</h3>
+                                <p class="services-offer-description mb-0">
+                                    Guided tours to Piton de la Fournaise with experienced local
+                                    guides. Equipment provided.
+                                </p>
+                                <div
+                                    class="services-offer-pracing d-flex align-items-center justify-content-between mt-3">
+                                    <p class="d-flex align-items-center gap-3 mb-0">From €75 <span>per person</span></p>
+                                    <a href="#" class="service-offer-btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <div class="single-service-provider-profile-box">
+                        <h3 class="single-service-booking-info-title">Contact Information</h3>
+                        <ul class="single-service-booking-info-list mt-3">
+                            <li class="d-flex align-items-center gap-2">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.2998 4.96665C3.2998 4.52463 3.4754 4.1007 3.78796 3.78814C4.10052 3.47558 4.52444 3.29999 4.96647 3.29999H7.6998C7.87463 3.30012 8.04499 3.35523 8.18677 3.45753C8.32854 3.55982 8.43456 3.70412 8.4898 3.86999L9.73814 7.61415C9.80139 7.80444 9.79391 8.01115 9.71707 8.19636C9.64023 8.38157 9.49918 8.53287 9.3198 8.62249L7.43897 9.56415C8.3609 11.6046 9.99519 13.2389 12.0356 14.1608L12.9773 12.28C13.0669 12.1006 13.2182 11.9596 13.4034 11.8827C13.5886 11.8059 13.7954 11.7984 13.9856 11.8617L17.7298 13.11C17.8958 13.1653 18.0402 13.2714 18.1425 13.4134C18.2448 13.5553 18.2998 13.7259 18.2998 13.9008V16.6333C18.2998 17.0753 18.1242 17.4993 17.8116 17.8118C17.4991 18.1244 17.0752 18.3 16.6331 18.3H15.7998C8.89647 18.3 3.2998 12.7033 3.2998 5.79999V4.96665Z"
+                                        stroke="#6B7280" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <a href="tel:+262 693 123 456">+262 693 123 456</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.2998 7.46667L9.8748 11.85C10.1487 12.0327 10.4706 12.1303 10.7998 12.1303C11.1291 12.1303 11.4509 12.0327 11.7248 11.85L18.2998 7.46667M4.96647 16.6333H16.6331C17.0752 16.6333 17.4991 16.4577 17.8116 16.1452C18.1242 15.8326 18.2998 15.4087 18.2998 14.9667V6.63334C18.2998 6.19131 18.1242 5.76739 17.8116 5.45483C17.4991 5.14227 17.0752 4.96667 16.6331 4.96667H4.96647C4.52444 4.96667 4.10052 5.14227 3.78796 5.45483C3.4754 5.76739 3.2998 6.19131 3.2998 6.63334V14.9667C3.2998 15.4087 3.4754 15.8326 3.78796 16.1452C4.10052 16.4577 4.52444 16.6333 4.96647 16.6333Z"
+                                        stroke="#6B7280" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <a href="mailto:contact@jeanstrekking.re">contact@jeanstrekking.re</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.34564 9.96665H4.96647C5.4085 9.96665 5.83242 10.1422 6.14498 10.4548C6.45754 10.7674 6.63314 11.1913 6.63314 11.6333V12.4667C6.63314 12.9087 6.80873 13.3326 7.12129 13.6452C7.43385 13.9577 7.85778 14.1333 8.2998 14.1333C8.74183 14.1333 9.16575 14.3089 9.47832 14.6215C9.79088 14.934 9.96647 15.358 9.96647 15.8V18.2542M7.46647 4.07915V5.38332C7.46647 5.93586 7.68596 6.46576 8.07667 6.85646C8.46737 7.24716 8.99727 7.46665 9.5498 7.46665H9.96647C10.4085 7.46665 10.8324 7.64225 11.145 7.95481C11.4575 8.26737 11.6331 8.69129 11.6331 9.13332C11.6331 9.57535 11.8087 9.99927 12.1213 10.3118C12.4339 10.6244 12.8578 10.8 13.2998 10.8C13.7418 10.8 14.1658 10.6244 14.4783 10.3118C14.7909 9.99927 14.9665 9.57535 14.9665 9.13332C14.9665 8.69129 15.1421 8.26737 15.4546 7.95481C15.7672 7.64225 16.1911 7.46665 16.6331 7.46665H17.5198M13.2998 17.8733V15.8C13.2998 15.358 13.4754 14.934 13.788 14.6215C14.1005 14.3089 14.5244 14.1333 14.9665 14.1333H17.5198M18.2998 10.8C18.2998 11.7849 18.1058 12.7602 17.7289 13.6701C17.352 14.5801 16.7995 15.4068 16.1031 16.1033C15.4067 16.7997 14.5799 17.3522 13.6699 17.7291C12.76 18.106 11.7847 18.3 10.7998 18.3C9.81489 18.3 8.83962 18.106 7.92968 17.7291C7.01974 17.3522 6.19294 16.7997 5.4965 16.1033C4.80006 15.4068 4.24762 14.5801 3.87071 13.6701C3.4938 12.7602 3.2998 11.7849 3.2998 10.8C3.2998 8.81086 4.08998 6.90321 5.4965 5.49669C6.90303 4.09016 8.81068 3.29999 10.7998 3.29999C12.7889 3.29999 14.6966 4.09016 16.1031 5.49669C17.5096 6.90321 18.2998 8.81086 18.2998 10.8Z"
+                                        stroke="#6B7280" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <a href="#">www.jeanstrekking.re</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-service-booking-info mt-4">
+                        <h3 class="single-service-booking-info-title">Business Hours</h3>
+                        <ul class="single-service-booking-info-list mt-3">
+                            <li class="d-flex align-items-center justify-content-between">
+                                Monday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                Tuesday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                Wednesday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                Thursday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                Friday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                Saturday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                Sunday
+                                <span class="fw-bold" style="color: black;">8:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cpp-location-box mt-4">
+                        <h3 class="single-service-booking-info-title">Location</h3>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.978243846063!2d55.4101729298605!3d-20.895822904125406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21827e0db5c74c33%3A0x1796b0eccb313390!2sLa%20Montagne%2C%20Saint-Denis%2C%20R%C3%A9union!5e0!3m2!1sen!2s!4v1750953830041!5m2!1sen!2s"
+                                width="100%" height="192" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="mt-2 mb-0">
+                            15 Rue de la Montagne<br />
+                            Saint-Denis 97400<br />
+                            Reunion Island
+                        </p>
+                        <a href="#">
+                            Get Directions
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3033_4616)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.0344 4.23435C9.18442 4.08437 9.38787 4.00012 9.6 4.00012C9.81213 4.00012 10.0156 4.08437 10.1656 4.23435L13.3656 7.43435C13.5156 7.58437 13.5998 7.78782 13.5998 7.99995C13.5998 8.21208 13.5156 8.41553 13.3656 8.56555L10.1656 11.7656C10.0147 11.9113 9.81264 11.9919 9.60288 11.9901C9.39312 11.9883 9.19247 11.9041 9.04415 11.7558C8.89582 11.6075 8.81168 11.4068 8.80986 11.1971C8.80804 10.9873 8.88867 10.7852 9.0344 10.6344L10.8688 8.79995H4.8C4.58783 8.79995 4.38434 8.71567 4.23431 8.56564C4.08429 8.41561 4 8.21212 4 7.99995C4 7.78778 4.08429 7.5843 4.23431 7.43427C4.38434 7.28424 4.58783 7.19995 4.8 7.19995H10.8688L9.0344 5.36555C8.88442 5.21553 8.80017 5.01208 8.80017 4.79995C8.80017 4.58782 8.88442 4.38437 9.0344 4.23435Z"
+                                        fill="#2F8482" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3033_4616">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.799805)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="single-service-comment-box mt-4">
+                        <div class="single-service-comment-profile d-flex align-items-center gap-3">
+                            <div class="single-service-comment-profile-img">
+                                <img src="./assets/images/comment-profile.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="single-service-comment-profile-name d-flex align-items-center gap-2 m-0">John
+                                    Doe
+                                    <span>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.59999 12.4335L4.48532 14.5968L5.27132 10.0148L1.93799 6.77015L6.53799 6.10348L8.59532 1.93481L10.6527 6.10348L15.2527 6.77015L11.9193 10.0148L12.7053 14.5968L8.59999 12.4335Z"
+                                                fill="#2F8482" />
+                                        </svg>
+                                        4.2
+                                    </span>
+                                </h3>
+                                <p class="single-service-comment-profile-name-2 m-0">Jean's Trekking Tours</p>
+                                <a href="tel:+1 12 3456789" class="single-service-comment-profile-number m-0">+1 12
+                                    3456789</a>
+                            </div>
+                        </div>
+                        <form action="" class="mt-4">
+                            <textarea class="comment-field" placeholder="Enter text here..."></textarea>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <button type="submit" class="submit-btn-comment">Message</button>
+                                <a href="#" class="send-offer-btn">Send Offer</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-8 col-md-7">
+                    <div class="cpp-review-section">
+                        <h2 class="single-description-title d-flex align-items-center justify-content-between">
+                            Reviews
+                            <span class="d-flex gap-2 align-items-center">
+                                <span class="cpp-review-rate d-flex align-items-center gap-1"
+                                    style="font-size: 18px;font-weight: 700;color: #111827;">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.24917 3.32698C9.54917 2.40598 10.8522 2.40598 11.1512 3.32698L12.2212 6.61898C12.2865 6.81947 12.4136 6.99416 12.5842 7.11808C12.7549 7.24201 12.9603 7.30883 13.1712 7.30898H16.6332C17.6022 7.30898 18.0042 8.54898 17.2212 9.11898L14.4212 11.153C14.2502 11.277 14.1229 11.452 14.0575 11.6528C13.9921 11.8537 13.992 12.0701 14.0572 12.271L15.1272 15.563C15.4272 16.484 14.3722 17.251 13.5872 16.681L10.7872 14.647C10.6164 14.523 10.4107 14.4562 10.1997 14.4562C9.98861 14.4562 9.78296 14.523 9.61217 14.647L6.81217 16.681C6.02817 17.251 4.97417 16.484 5.27317 15.563L6.34317 12.271C6.40834 12.0701 6.40823 11.8537 6.34284 11.6528C6.27745 11.452 6.15014 11.277 5.97917 11.153L3.18017 9.11998C2.39717 8.54998 2.80017 7.30998 3.76817 7.30998H7.22917C7.44022 7.31004 7.64587 7.24332 7.81669 7.11938C7.98751 6.99544 8.11474 6.82063 8.18017 6.61998L9.25017 3.32798L9.24917 3.32698Z"
+                                            fill="#FACC15" />
+                                    </svg>
+                                    4.9
+                                </span>
+                                <span class="cpp-total-reviews d-flex align-items-center gap-1">
+                                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.0859375 2.08124V1.76093C0.0859375 1.31301 0.226562 0.943217 0.507812 0.65155C0.794271 0.359884 1.18229 0.21405 1.67188 0.21405C2.16667 0.21405 2.55729 0.359884 2.84375 0.65155C3.13021 0.943217 3.27344 1.31301 3.27344 1.76093V2.08124C3.27344 2.52395 3.13021 2.89113 2.84375 3.1828C2.5625 3.46926 2.17448 3.61249 1.67969 3.61249C1.1901 3.61249 0.802083 3.46926 0.515625 3.1828C0.229167 2.89113 0.0859375 2.52395 0.0859375 2.08124Z"
+                                            fill="#6B7280" />
+                                    </svg>
+                                    56 reviews
+                                </span>
+                            </span>
+                        </h2>
+
+                        <div class="ratings-breakdown mt-4">
+                            <div class="rating-row">
+                                <div class="star-label">
+                                    <svg width="19" height="11" viewBox="0 0 19 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.42383 7.40576C6.42383 7.88428 6.3418 8.31722 6.17773 8.70459C6.01367 9.09196 5.77897 9.42464 5.47363 9.70264C5.17285 9.98063 4.80827 10.1948 4.37988 10.3452C3.9515 10.4956 3.47526 10.5708 2.95117 10.5708C2.03971 10.5708 1.36296 10.4341 0.920898 10.1606V8.97119C1.58626 9.39958 2.26758 9.61377 2.96484 9.61377C3.32031 9.61377 3.63932 9.56136 3.92188 9.45654C4.20898 9.35173 4.4528 9.20589 4.65332 9.01904C4.85384 8.83219 5.00651 8.60661 5.11133 8.34229C5.2207 8.07796 5.27539 7.78857 5.27539 7.47412C5.27539 6.8361 5.0612 6.33708 4.63281 5.97705C4.20443 5.61247 3.58236 5.43018 2.7666 5.43018C2.63444 5.43018 2.49544 5.43245 2.34961 5.43701C2.20378 5.44157 2.05794 5.4484 1.91211 5.45752C1.76628 5.46208 1.62272 5.46891 1.48145 5.47803C1.34473 5.48714 1.2194 5.49854 1.10547 5.51221L1.44043 0.597168H5.97266V1.60889H2.41113L2.21289 4.48682C2.35872 4.4777 2.51367 4.47087 2.67773 4.46631C2.8418 4.45719 2.98763 4.45264 3.11523 4.45264C3.63477 4.45264 4.09961 4.521 4.50977 4.65771C4.91992 4.79443 5.26628 4.9904 5.54883 5.24561C5.83594 5.49626 6.05241 5.80615 6.19824 6.17529C6.34863 6.53988 6.42383 6.95003 6.42383 7.40576ZM11.8994 4.29541L13.1709 0.597168L14.4561 4.29541H18.3252L15.249 6.72217L16.4453 10.3999L13.1709 8.21924L9.91016 10.3999L11.1064 6.72217L8.03027 4.29541H11.8994Z"
+                                            fill="#6B7280" />
+                                    </svg>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                                <div class="percentage">85%</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="star-label">
+                                    <svg width="20" height="11" viewBox="0 0 20 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.61035 0.597168V7.0708H7.86816V8.09619H6.61035V10.3999H5.50293V8.09619H0.895508V7.12549C1.32389 6.64242 1.75684 6.12744 2.19434 5.58057C2.63184 5.02913 3.04883 4.47087 3.44531 3.90576C3.84635 3.34066 4.21549 2.77783 4.55273 2.21729C4.89453 1.65218 5.18164 1.11214 5.41406 0.597168H6.61035ZM2.16016 7.0708H5.50293V2.27197C5.16113 2.86898 4.83757 3.40218 4.53223 3.87158C4.22689 4.34098 3.93522 4.76709 3.65723 5.1499C3.38379 5.53271 3.12174 5.87907 2.87109 6.18896C2.62044 6.49886 2.38346 6.79281 2.16016 7.0708ZM12.8994 4.29541L14.1709 0.597168L15.4561 4.29541H19.3252L16.249 6.72217L17.4453 10.3999L14.1709 8.21924L10.9102 10.3999L12.1064 6.72217L9.03027 4.29541H12.8994Z"
+                                            fill="#6B7280" />
+                                    </svg>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 10%;"></div>
+                                </div>
+                                <div class="percentage">10%</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="star-label">
+                                    <svg width="19" height="11" viewBox="0 0 19 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.31445 7.62451C6.31445 8.06657 6.23014 8.46989 6.06152 8.83447C5.89746 9.1945 5.66276 9.50439 5.35742 9.76416C5.05664 10.0194 4.69434 10.2176 4.27051 10.3589C3.84668 10.5002 3.37956 10.5708 2.86914 10.5708C1.9349 10.5708 1.19206 10.3931 0.640625 10.0376V8.83447C1.30143 9.354 2.05794 9.61377 2.91016 9.61377C3.25195 9.61377 3.55957 9.57048 3.83301 9.48389C4.111 9.3973 4.34798 9.27197 4.54395 9.10791C4.74447 8.94385 4.89714 8.74561 5.00195 8.51318C5.11133 8.28076 5.16602 8.01872 5.16602 7.72705C5.16602 6.44645 4.25456 5.80615 2.43164 5.80615H1.61816V4.85596H2.39062C4.00391 4.85596 4.81055 4.25439 4.81055 3.05127C4.81055 1.93929 4.19531 1.3833 2.96484 1.3833C2.27214 1.3833 1.62272 1.61572 1.0166 2.08057V0.993652C1.64095 0.619954 2.38379 0.433105 3.24512 0.433105C3.65527 0.433105 4.02669 0.490072 4.35938 0.604004C4.69206 0.717936 4.97689 0.877441 5.21387 1.08252C5.45085 1.2876 5.63314 1.53369 5.76074 1.8208C5.8929 2.10791 5.95898 2.42464 5.95898 2.771C5.95898 4.06071 5.30729 4.89014 4.00391 5.25928V5.28662C4.33659 5.32308 4.64421 5.40511 4.92676 5.53271C5.20931 5.65576 5.45312 5.81755 5.6582 6.01807C5.86328 6.21859 6.02279 6.45557 6.13672 6.729C6.25521 6.99788 6.31445 7.29639 6.31445 7.62451ZM11.8994 4.29541L13.1709 0.597168L14.4561 4.29541H18.3252L15.249 6.72217L16.4453 10.3999L13.1709 8.21924L9.91016 10.3999L11.1064 6.72217L8.03027 4.29541H11.8994Z"
+                                            fill="#6B7280" />
+                                    </svg>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 5%;"></div>
+                                </div>
+                                <div class="percentage">5%</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="star-label">
+                                    <svg width="19" height="11" viewBox="0 0 19 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.07715 3.16748C5.07715 2.8667 5.0293 2.60465 4.93359 2.38135C4.84245 2.15804 4.71484 1.97347 4.55078 1.82764C4.39128 1.67725 4.20215 1.56559 3.9834 1.49268C3.76465 1.41976 3.52767 1.3833 3.27246 1.3833C3.05371 1.3833 2.83952 1.41292 2.62988 1.47217C2.42025 1.53141 2.21517 1.61344 2.01465 1.71826C1.81868 1.82308 1.62728 1.9484 1.44043 2.09424C1.25814 2.24007 1.08724 2.40186 0.927734 2.57959V1.37646C1.24219 1.07113 1.5931 0.838704 1.98047 0.679199C2.3724 0.515137 2.84863 0.433105 3.40918 0.433105C3.81022 0.433105 4.18164 0.49235 4.52344 0.61084C4.86523 0.724772 5.16146 0.893392 5.41211 1.1167C5.66276 1.34001 5.85872 1.61572 6 1.94385C6.14583 2.27197 6.21875 2.64795 6.21875 3.07178C6.21875 3.45915 6.17318 3.81006 6.08203 4.12451C5.99544 4.43896 5.861 4.73519 5.67871 5.01318C5.50098 5.29118 5.27539 5.55778 5.00195 5.81299C4.72852 6.0682 4.40723 6.32796 4.03809 6.59229C3.5778 6.92041 3.19727 7.20068 2.89648 7.43311C2.60026 7.66553 2.36328 7.88428 2.18555 8.08936C2.01237 8.28988 1.88932 8.49268 1.81641 8.69775C1.74805 8.89827 1.71387 9.1307 1.71387 9.39502H6.59473V10.3999H0.544922V9.91455C0.544922 9.49528 0.590495 9.12614 0.681641 8.80713C0.772786 8.48812 0.923177 8.18506 1.13281 7.89795C1.34245 7.61084 1.61589 7.32373 1.95312 7.03662C2.29492 6.74951 2.71191 6.42594 3.2041 6.06592C3.55957 5.81071 3.85579 5.56689 4.09277 5.33447C4.33431 5.10205 4.52799 4.86963 4.67383 4.63721C4.81966 4.40479 4.9222 4.17008 4.98145 3.93311C5.04525 3.69157 5.07715 3.43636 5.07715 3.16748ZM11.8994 4.29541L13.1709 0.597168L14.4561 4.29541H18.3252L15.249 6.72217L16.4453 10.3999L13.1709 8.21924L9.91016 10.3999L11.1064 6.72217L8.03027 4.29541H11.8994Z"
+                                            fill="#6B7280" />
+                                    </svg>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <div class="percentage">0%</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="star-label">
+                                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.74902 10.3999H2.62793V1.93018C2.54134 2.01676 2.41374 2.11702 2.24512 2.23096C2.08105 2.34033 1.89421 2.44971 1.68457 2.55908C1.47949 2.66846 1.26074 2.771 1.02832 2.8667C0.800456 2.9624 0.577148 3.0376 0.358398 3.09229V1.95752C0.604492 1.88916 0.864258 1.79801 1.1377 1.68408C1.41569 1.56559 1.68685 1.43571 1.95117 1.29443C2.22005 1.1486 2.47298 0.99821 2.70996 0.843262C2.94694 0.683757 3.15202 0.528809 3.3252 0.378418H3.74902V10.3999ZM10.8994 4.29541L12.1709 0.597168L13.4561 4.29541H17.3252L14.249 6.72217L15.4453 10.3999L12.1709 8.21924L8.91016 10.3999L10.1064 6.72217L7.03027 4.29541H10.8994Z"
+                                            fill="#6B7280" />
+                                    </svg>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <div class="percentage">0%</div>
+                            </div>
+                        </div>
+
+                        <div class="single-services-comments mt-5">
+                            <div class="single-service-comment">
+                                <div class="commenter-profile d-flex align-items-center gap-3">
+                                    <div class="commenter-profile-img">
+                                        SC
+                                    </div>
+                                    <div>
+                                        <h3 class="commenter-profile-name m-0">Sophie C.</h3>
+                                        <span class="commenter-profile-date d-flex align-items-center gap-2">
+                                            <svg width="81" height="16" viewBox="0 0 81 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.43947 2.34166C7.67947 1.60486 8.72187 1.60486 8.96107 2.34166L9.81707 4.97526C9.86937 5.13565 9.97103 5.27541 10.1075 5.37455C10.244 5.47369 10.4084 5.52714 10.5771 5.52726H13.3467C14.1219 5.52726 14.4435 6.51926 13.8171 6.97526L11.5771 8.60246C11.4403 8.70169 11.3385 8.84167 11.2861 9.00234C11.2338 9.16302 11.2337 9.33613 11.2859 9.49686L12.1419 12.1305C12.3819 12.8673 11.5379 13.4809 10.9099 13.0249L8.66987 11.3977C8.53324 11.2985 8.36872 11.245 8.19987 11.245C8.03103 11.245 7.86651 11.2985 7.72987 11.3977L5.48987 13.0249C4.86267 13.4809 4.01947 12.8673 4.25867 12.1305L5.11467 9.49686C5.16681 9.33613 5.16672 9.16302 5.11441 9.00234C5.06209 8.84167 4.96025 8.70169 4.82347 8.60246L2.58427 6.97606C1.95787 6.52006 2.28027 5.52806 3.05467 5.52806H5.82347C5.99231 5.52811 6.15683 5.47473 6.29349 5.37558C6.43015 5.27643 6.53193 5.13658 6.58427 4.97606L7.44027 2.34246L7.43947 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M23.4395 2.34166C23.6795 1.60486 24.7219 1.60486 24.9611 2.34166L25.8171 4.97526C25.8694 5.13565 25.971 5.27541 26.1075 5.37455C26.244 5.47369 26.4084 5.52714 26.5771 5.52726H29.3467C30.1219 5.52726 30.4435 6.51926 29.8171 6.97526L27.5771 8.60246C27.4403 8.70169 27.3385 8.84167 27.2861 9.00234C27.2338 9.16302 27.2337 9.33613 27.2859 9.49686L28.1419 12.1305C28.3819 12.8673 27.5379 13.4809 26.9099 13.0249L24.6699 11.3977C24.5332 11.2985 24.3687 11.245 24.1999 11.245C24.031 11.245 23.8665 11.2985 23.7299 11.3977L21.4899 13.0249C20.8627 13.4809 20.0195 12.8673 20.2587 12.1305L21.1147 9.49686C21.1668 9.33613 21.1667 9.16302 21.1144 9.00234C21.0621 8.84167 20.9602 8.70169 20.8235 8.60246L18.5843 6.97606C17.9579 6.52006 18.2803 5.52806 19.0547 5.52806H21.8235C21.9923 5.52811 22.1568 5.47473 22.2935 5.37558C22.4301 5.27643 22.5319 5.13658 22.5843 4.97606L23.4403 2.34246L23.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M39.4395 2.34166C39.6795 1.60486 40.7219 1.60486 40.9611 2.34166L41.8171 4.97526C41.8694 5.13565 41.971 5.27541 42.1075 5.37455C42.244 5.47369 42.4084 5.52714 42.5771 5.52726H45.3467C46.1219 5.52726 46.4435 6.51926 45.8171 6.97526L43.5771 8.60246C43.4403 8.70169 43.3385 8.84167 43.2861 9.00234C43.2338 9.16302 43.2337 9.33613 43.2859 9.49686L44.1419 12.1305C44.3819 12.8673 43.5379 13.4809 42.9099 13.0249L40.6699 11.3977C40.5332 11.2985 40.3687 11.245 40.1999 11.245C40.031 11.245 39.8665 11.2985 39.7299 11.3977L37.4899 13.0249C36.8627 13.4809 36.0195 12.8673 36.2587 12.1305L37.1147 9.49686C37.1668 9.33613 37.1667 9.16302 37.1144 9.00234C37.0621 8.84167 36.9602 8.70169 36.8235 8.60246L34.5843 6.97606C33.9579 6.52006 34.2803 5.52806 35.0547 5.52806H37.8235C37.9923 5.52811 38.1568 5.47473 38.2935 5.37558C38.4301 5.27643 38.5319 5.13658 38.5843 4.97606L39.4403 2.34246L39.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M55.4395 2.34166C55.6795 1.60486 56.7219 1.60486 56.9611 2.34166L57.8171 4.97526C57.8694 5.13565 57.971 5.27541 58.1075 5.37455C58.244 5.47369 58.4084 5.52714 58.5771 5.52726H61.3467C62.1219 5.52726 62.4435 6.51926 61.8171 6.97526L59.5771 8.60246C59.4403 8.70169 59.3385 8.84167 59.2861 9.00234C59.2338 9.16302 59.2337 9.33613 59.2859 9.49686L60.1419 12.1305C60.3819 12.8673 59.5379 13.4809 58.9099 13.0249L56.6699 11.3977C56.5332 11.2985 56.3687 11.245 56.1999 11.245C56.031 11.245 55.8665 11.2985 55.7299 11.3977L53.4899 13.0249C52.8627 13.4809 52.0195 12.8673 52.2587 12.1305L53.1147 9.49686C53.1668 9.33613 53.1667 9.16302 53.1144 9.00234C53.0621 8.84167 52.9602 8.70169 52.8235 8.60246L50.5843 6.97606C49.9579 6.52006 50.2803 5.52806 51.0547 5.52806H53.8235C53.9923 5.52811 54.1568 5.47473 54.2935 5.37558C54.4301 5.27643 54.5319 5.13658 54.5843 4.97606L55.4403 2.34246L55.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M71.4395 2.34166C71.6795 1.60486 72.7219 1.60486 72.9611 2.34166L73.8171 4.97526C73.8694 5.13565 73.971 5.27541 74.1075 5.37455C74.244 5.47369 74.4084 5.52714 74.5771 5.52726H77.3467C78.1219 5.52726 78.4435 6.51926 77.8171 6.97526L75.5771 8.60246C75.4403 8.70169 75.3385 8.84167 75.2861 9.00234C75.2338 9.16302 75.2337 9.33613 75.2859 9.49686L76.1419 12.1305C76.3819 12.8673 75.5379 13.4809 74.9099 13.0249L72.6699 11.3977C72.5332 11.2985 72.3687 11.245 72.1999 11.245C72.031 11.245 71.8665 11.2985 71.7299 11.3977L69.4899 13.0249C68.8627 13.4809 68.0195 12.8673 68.2587 12.1305L69.1147 9.49686C69.1668 9.33613 69.1667 9.16302 69.1144 9.00234C69.0621 8.84167 68.9602 8.70169 68.8235 8.60246L66.5843 6.97606C65.9579 6.52006 66.2803 5.52806 67.0547 5.52806H69.8235C69.9923 5.52811 70.1568 5.47473 70.2935 5.37558C70.4301 5.27643 70.5319 5.13658 70.5843 4.97606L71.4403 2.34246L71.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                            </svg>
+                                            2 weeks ago
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="review-text mt-3 mb-0">
+                                    The sunrise tour was absolutely magical! Our guide Jean was incredibly knowledgeable
+                                    about the volcano and the island's geology. The views were breathtaking and the
+                                    entire
+                                    experience
+                                    was well organized. Highly recommend!
+                                </p>
+                            </div>
+                            <div class="single-service-comment mt-4">
+                                <div class="commenter-profile d-flex align-items-center gap-3">
+                                    <div class="commenter-profile-img">
+                                        SC
+                                    </div>
+                                    <div>
+                                        <h3 class="commenter-profile-name m-0">Sophie C.</h3>
+                                        <span class="commenter-profile-date d-flex align-items-center gap-2">
+                                            <svg width="81" height="16" viewBox="0 0 81 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.43947 2.34166C7.67947 1.60486 8.72187 1.60486 8.96107 2.34166L9.81707 4.97526C9.86937 5.13565 9.97103 5.27541 10.1075 5.37455C10.244 5.47369 10.4084 5.52714 10.5771 5.52726H13.3467C14.1219 5.52726 14.4435 6.51926 13.8171 6.97526L11.5771 8.60246C11.4403 8.70169 11.3385 8.84167 11.2861 9.00234C11.2338 9.16302 11.2337 9.33613 11.2859 9.49686L12.1419 12.1305C12.3819 12.8673 11.5379 13.4809 10.9099 13.0249L8.66987 11.3977C8.53324 11.2985 8.36872 11.245 8.19987 11.245C8.03103 11.245 7.86651 11.2985 7.72987 11.3977L5.48987 13.0249C4.86267 13.4809 4.01947 12.8673 4.25867 12.1305L5.11467 9.49686C5.16681 9.33613 5.16672 9.16302 5.11441 9.00234C5.06209 8.84167 4.96025 8.70169 4.82347 8.60246L2.58427 6.97606C1.95787 6.52006 2.28027 5.52806 3.05467 5.52806H5.82347C5.99231 5.52811 6.15683 5.47473 6.29349 5.37558C6.43015 5.27643 6.53193 5.13658 6.58427 4.97606L7.44027 2.34246L7.43947 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M23.4395 2.34166C23.6795 1.60486 24.7219 1.60486 24.9611 2.34166L25.8171 4.97526C25.8694 5.13565 25.971 5.27541 26.1075 5.37455C26.244 5.47369 26.4084 5.52714 26.5771 5.52726H29.3467C30.1219 5.52726 30.4435 6.51926 29.8171 6.97526L27.5771 8.60246C27.4403 8.70169 27.3385 8.84167 27.2861 9.00234C27.2338 9.16302 27.2337 9.33613 27.2859 9.49686L28.1419 12.1305C28.3819 12.8673 27.5379 13.4809 26.9099 13.0249L24.6699 11.3977C24.5332 11.2985 24.3687 11.245 24.1999 11.245C24.031 11.245 23.8665 11.2985 23.7299 11.3977L21.4899 13.0249C20.8627 13.4809 20.0195 12.8673 20.2587 12.1305L21.1147 9.49686C21.1668 9.33613 21.1667 9.16302 21.1144 9.00234C21.0621 8.84167 20.9602 8.70169 20.8235 8.60246L18.5843 6.97606C17.9579 6.52006 18.2803 5.52806 19.0547 5.52806H21.8235C21.9923 5.52811 22.1568 5.47473 22.2935 5.37558C22.4301 5.27643 22.5319 5.13658 22.5843 4.97606L23.4403 2.34246L23.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M39.4395 2.34166C39.6795 1.60486 40.7219 1.60486 40.9611 2.34166L41.8171 4.97526C41.8694 5.13565 41.971 5.27541 42.1075 5.37455C42.244 5.47369 42.4084 5.52714 42.5771 5.52726H45.3467C46.1219 5.52726 46.4435 6.51926 45.8171 6.97526L43.5771 8.60246C43.4403 8.70169 43.3385 8.84167 43.2861 9.00234C43.2338 9.16302 43.2337 9.33613 43.2859 9.49686L44.1419 12.1305C44.3819 12.8673 43.5379 13.4809 42.9099 13.0249L40.6699 11.3977C40.5332 11.2985 40.3687 11.245 40.1999 11.245C40.031 11.245 39.8665 11.2985 39.7299 11.3977L37.4899 13.0249C36.8627 13.4809 36.0195 12.8673 36.2587 12.1305L37.1147 9.49686C37.1668 9.33613 37.1667 9.16302 37.1144 9.00234C37.0621 8.84167 36.9602 8.70169 36.8235 8.60246L34.5843 6.97606C33.9579 6.52006 34.2803 5.52806 35.0547 5.52806H37.8235C37.9923 5.52811 38.1568 5.47473 38.2935 5.37558C38.4301 5.27643 38.5319 5.13658 38.5843 4.97606L39.4403 2.34246L39.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M55.4395 2.34166C55.6795 1.60486 56.7219 1.60486 56.9611 2.34166L57.8171 4.97526C57.8694 5.13565 57.971 5.27541 58.1075 5.37455C58.244 5.47369 58.4084 5.52714 58.5771 5.52726H61.3467C62.1219 5.52726 62.4435 6.51926 61.8171 6.97526L59.5771 8.60246C59.4403 8.70169 59.3385 8.84167 59.2861 9.00234C59.2338 9.16302 59.2337 9.33613 59.2859 9.49686L60.1419 12.1305C60.3819 12.8673 59.5379 13.4809 58.9099 13.0249L56.6699 11.3977C56.5332 11.2985 56.3687 11.245 56.1999 11.245C56.031 11.245 55.8665 11.2985 55.7299 11.3977L53.4899 13.0249C52.8627 13.4809 52.0195 12.8673 52.2587 12.1305L53.1147 9.49686C53.1668 9.33613 53.1667 9.16302 53.1144 9.00234C53.0621 8.84167 52.9602 8.70169 52.8235 8.60246L50.5843 6.97606C49.9579 6.52006 50.2803 5.52806 51.0547 5.52806H53.8235C53.9923 5.52811 54.1568 5.47473 54.2935 5.37558C54.4301 5.27643 54.5319 5.13658 54.5843 4.97606L55.4403 2.34246L55.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                                <path
+                                                    d="M71.4395 2.34166C71.6795 1.60486 72.7219 1.60486 72.9611 2.34166L73.8171 4.97526C73.8694 5.13565 73.971 5.27541 74.1075 5.37455C74.244 5.47369 74.4084 5.52714 74.5771 5.52726H77.3467C78.1219 5.52726 78.4435 6.51926 77.8171 6.97526L75.5771 8.60246C75.4403 8.70169 75.3385 8.84167 75.2861 9.00234C75.2338 9.16302 75.2337 9.33613 75.2859 9.49686L76.1419 12.1305C76.3819 12.8673 75.5379 13.4809 74.9099 13.0249L72.6699 11.3977C72.5332 11.2985 72.3687 11.245 72.1999 11.245C72.031 11.245 71.8665 11.2985 71.7299 11.3977L69.4899 13.0249C68.8627 13.4809 68.0195 12.8673 68.2587 12.1305L69.1147 9.49686C69.1668 9.33613 69.1667 9.16302 69.1144 9.00234C69.0621 8.84167 68.9602 8.70169 68.8235 8.60246L66.5843 6.97606C65.9579 6.52006 66.2803 5.52806 67.0547 5.52806H69.8235C69.9923 5.52811 70.1568 5.47473 70.2935 5.37558C70.4301 5.27643 70.5319 5.13658 70.5843 4.97606L71.4403 2.34246L71.4395 2.34166Z"
+                                                    fill="#FACC15" />
+                                            </svg>
+                                            2 weeks ago
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="review-text mt-3 mb-0">
+                                    The sunrise tour was absolutely magical! Our guide Jean was incredibly knowledgeable
+                                    about the volcano and the island's geology. The views were breathtaking and the
+                                    entire
+                                    experience
+                                    was well organized. Highly recommend!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="./assets/js/general.js"></script>
+
+</body>
+
+</html>

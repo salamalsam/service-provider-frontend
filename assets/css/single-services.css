@@ -8,7 +8,7 @@ Descriptipon:   This file contains all styling properties for the Single Service
 
 @import url(theme-root.css);
 
-.main-page-content{
+.main-page-content {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -22,11 +22,11 @@ Descriptipon:   This file contains all styling properties for the Single Service
     padding-left: 20px;
 }
 
-.breadcrumb ul li{
+.breadcrumb ul li {
     list-style: none;
 }
 
-.breadcrumb ul li a{
+.breadcrumb ul li a {
     text-decoration: none;
     color: #374151;
     font-family: var(--roboto-font-family);
@@ -35,24 +35,24 @@ Descriptipon:   This file contains all styling properties for the Single Service
     font-weight: 500;
 }
 
-.breadcrumb ul li a svg{
+.breadcrumb ul li a svg {
     margin-top: 3px;
 }
 
-.breadcrumb ul li a span{
+.breadcrumb ul li a span {
     padding-top: 7px;
 }
 
-.breadcrumb ul li:last-child a{
+.breadcrumb ul li:last-child a {
     color: #6B7280;
 }
 
-.single-services-hero-section{
+.single-services-hero-section {
     padding-left: 20px;
     padding-top: 10px;
 }
 
-.single-services-category{
+.single-services-category {
     padding: 2px 10px;
     border-radius: 4px;
     background-color: #DCFCE7;
@@ -62,7 +62,7 @@ Descriptipon:   This file contains all styling properties for the Single Service
     font-weight: 500;
 }
 
-.rating-text{
+.rating-text {
     font-family: var(--roboto-font-family);
     font-size: 14px;
     font-weight: 400;
@@ -70,7 +70,7 @@ Descriptipon:   This file contains all styling properties for the Single Service
     padding-left: 5px;
 }
 
-.single-services-title{
+.single-services-title {
     font-family: var(--nunito-font-family);
     font-size: 30px;
     line-height: 36px;
@@ -79,10 +79,401 @@ Descriptipon:   This file contains all styling properties for the Single Service
     margin: 10px 0px;
 }
 
-.single-services-description{
-     font-family: var(--roboto-font-family);
+.single-services-description {
+    font-family: var(--roboto-font-family);
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: var(--prominent-dark-text);
+}
+
+.single-services-location {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 0px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.btn-view-profile {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--off-text);
+    background-color: var(--primary-bg);
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px #0000000D;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-chat {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--off-text);
+    background-color: var(--primary-bg);
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px #0000000D;
+    text-decoration: none;
+    display: block;
+}
+
+.single-service-image1 {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.single-service-image2 {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.single-service-image2:nth-child(2) {
+    margin-top: 15px;
+}
+
+.single-description-title {
+    font-family: var(--nunito-font-family);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--prominent-text);
+}
+
+.single-description-text {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+}
+
+.single-description-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.single-description-list li {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+    margin-bottom: 10px;
+}
+
+.single-service-provider-profile-box,
+.single-service-booking-info,
+.single-service-comment-box {
+    padding: 24.8px;
+    border-radius: 8px;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 0px 3px 2px #E5E5E540;
+}
+
+.sspp-profile-box-image {
+    padding: 13.6px 16px;
+    border-radius: 50px;
+    background-color: var(--prominent-dark-bg);
+    font-family: var(--roboto-font-family);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.sspp-profile-box-name,
+.single-service-booking-info-title {
+    font-family: var(--nunito-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--prominent-text);
+}
+
+.sspp-profile-box-description {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+}
+
+.sspp-profile-box-rating {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.sspp-profile-box-response {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+}
+
+.sspp-profile-box-link {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+.single-service-booking-info-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.single-service-booking-info-list li {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: -1px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+    margin-top: 10px;
+}
+
+.single-service-comment-profile-img img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--off-bg);
+    box-shadow: 0px 10px 25px #0000001F;
+}
+
+.single-service-comment-profile-name {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #5E5E5E;
+}
+
+.single-service-comment-profile-name span {
+    font-family: var(--lato-font-family);
+    font-size: 12px;
+    line-height: 0px;
+    font-weight: 400;
+    color: #798388;
+}
+
+.single-service-comment-profile-name-2 {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #8E8E8E;
+}
+
+.single-service-comment-profile-number {
+    font-family: var(--lato-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #8E8E8E;
+    text-decoration: none;
+    display: block;
+}
+
+.comment-field {
+    padding: 12px 16px;
+    border-radius: 8px;
+    height: 140px;
+    border: 1px solid #DCDCDE;
+    width: 100%;
+    font-family: var(--inter-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #7F7D83;
+}
+
+.submit-btn-comment {
+    padding: 16px 24px;
+    background-color: var(--primary-text);
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border: none;
+    width: 48%;
+}
+
+.send-offer-btn {
+    padding: 16px 24px;
+    border: 1px solid var(--primary-bg);
+    border-radius: 8px;
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--primary-text);
+    text-decoration: none;
+    display: block;
+    width: 48%;
+    text-align: center;
+}
+
+.tour-optios-box {
+    border: 1px solid #E5E7EB;
+    padding: 16.8px;
+    border-radius: 8px;
+}
+
+.tour-optios-box-title {
+    font-family: var(--nunito-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.tour-optios-box-description {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.tour-optios-box-price {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--primary-text);
+    text-align: end;
+}
+
+.tour-optios-box-per-person {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.single-service-review-title {
+    font-family: var(--nunito-font-family);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--prominent-text);
+}
+
+.write-btn-review {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.single-service-comment {
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 20px;
+}
+
+.single-service-comment:last-child {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.commenter-profile-img {
+    background-color: var(--prominent-dark-bg);
+    padding: 12px 14px;
+    border-radius: 50px;
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.commenter-profile-name {
+    font-family: var(--nunito-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.commenter-profile-date {
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.review-text {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+}
+
+@media only screen and (max-width: 1024px) {
+    .single-services-hero-section-btns {
+        gap: 10px !important;
+    }
+
+    .single-service-booking-info-list li {
+        align-items: start !important;
+    }
+
+    .single-service-booking-info-list li svg {
+        margin-top: 1px;
+    }
+
+    .send-offer-btn {
+        padding: 16px 17px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .submit-btn-comment {
+        padding: 16px;
+    }
+
+    .send-offer-btn {
+        padding: 16px 12px;
+    }
+    .single-description-list li{
+        align-items: start !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .breadcrumb ul, .single-services-hero-section{
+        padding-left: 0px;
+    }
+    .single-services-hero-section-btns{
+        justify-content: start !important;
+        margin-top: 20px;
+    }
+    .single-service-image2{
+        margin-top: 15px;
+    }
+    .single-service-provider-profile-box{
+        margin-top: 20px;
+    }
 }

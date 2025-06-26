@@ -611,6 +611,14 @@ Descriptipon:   This file contains all styling properties for the User Profile.
         line-height: 65px;
     }
 
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-section .container {
+        justify-content: center;
+    }
+
     .categories-container {
         gap: 29px;
     }
@@ -621,6 +629,20 @@ Descriptipon:   This file contains all styling properties for the User Profile.
 
     .feature-services {
         padding: 80px 0px 80px 0px;
+    }
+
+    .pc-profile-box {
+        width: 187px;
+    }
+
+    .pc-profile-box img {
+        height: 160px;
+    }
+
+
+    .pc-profile-box h3,
+    .pc-profile-type {
+        font-size: 16px;
     }
 
     .fs-title,
@@ -690,6 +712,13 @@ Descriptipon:   This file contains all styling properties for the User Profile.
 
     .head-profile-section {
         gap: 0px;
+    }
+
+    .hero-title, .hero-description, .hero-search-box{
+        position:unset;
+    }
+    .hero-search-box{
+        backdrop-filter: unset;
     }
 
 }

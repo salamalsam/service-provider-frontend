@@ -1,0 +1,279 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Contractor Public Profile.
+*/
+
+@import url(theme-root.css);
+
+.cpp-hero-section {
+    padding-bottom: 25px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 2px #0000000D;
+    border-radius: 8px;
+}
+
+.cpp-hero-section-image {
+    height: 192px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cpp-profile-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+    border: 4px solid #ffffff;
+    color: #999999;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--roboto-font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+}
+
+.cpp-hero-section-title {
+    font-family: var(--nunito-font-family);
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--prominent-text);
+}
+
+.cpp-review-rate {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 0px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.cpp-total-reviews,
+.cpp-location {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.cpp-location {
+    line-height: 0px;
+}
+
+.cpp-hero-section-btn {
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    background-color: var(--primary-bg);
+    color: var(--off-text);
+    border: none;
+    box-shadow: 0px 1px 2px #0000000D;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--off-text);
+    text-decoration: none;
+    width: 155px;
+    margin-left: auto;
+}
+
+.single-service-booking-info-list li a {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: -1px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+    text-decoration: none;
+}
+
+.cpp-location-box {
+    padding: 24.8px;
+    border-radius: 8px;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 0px 3px 2px #E5E5E540;
+}
+
+.cpp-location-box p {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.cpp-location-box a {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.cpp-about-section,
+.cpp-services-offer,
+.cpp-review-section {
+    border: 1px solid #D9D9D9;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.single-description-title span {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.cpp-services-offer-img {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.services-offer-tag {
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #166534;
+    padding: 2px 10px;
+    background-color: #DCFCE7;
+    border-radius: 4px;
+}
+
+.services-offer-title {
+    font-family: var(--nunito-font-family);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--prominent-text);
+}
+
+.services-offer-description {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 48px;
+}
+
+.services-offer-pracing p {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.services-offer-pracing span {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.service-offer-btn {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+.services-offer-row {
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 24px;
+}
+
+.services-offer-row:last-child {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+
+.rating-row:last-child {
+    margin-bottom: 0;
+}
+
+.star-label {
+    display: flex;
+    align-items: center;
+    min-width: 24px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.star-symbol {
+    color: #ffa500;
+    margin-left: 2px;
+    font-size: 12px;
+}
+
+.progress-container {
+    flex: 1;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #FACC15;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.percentage {
+    min-width: 32px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 990px) {
+    .cpp-hero-section-btn {
+        padding: 8.8px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cpp-profile-img{
+        margin-left: 20px;
+    }
+
+    .cpp-hero-section-btn{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
