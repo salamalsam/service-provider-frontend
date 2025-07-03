@@ -1,0 +1,142 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Checkout.
+*/
+
+@import url(theme-root.css);
+
+.checkout-section {
+    border: 1px solid var(--Primary-Navy);
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px #0000000D;
+}
+
+.checkout-title {
+    font-family: var(--nunito-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--prominent-text);
+    padding: 24px;
+    border-bottom: 1px solid var(--Primary-Navy);
+}
+
+.checkout-detail {
+    padding: 24px;
+}
+
+.order-summary {
+    font-family: var(--nunito-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--prominent-text);
+}
+
+.selected-plan-detail {
+    background-color: #F9FAFB;
+    border-radius: 8px;
+    padding: 24px 16px;
+}
+
+.select-plan-detail {
+    border-bottom: 1px solid var(--Primary-Navy);
+    padding-bottom: 15px;
+}
+
+.selected-plan-name {
+    font-family: var(--nunito-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--prominent-text);
+}
+
+.selected-plan-time {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--prominent-dark-text);
+}
+
+.selected-plan-price {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--prominent-dark-text);
+    padding-right: 30px;
+}
+
+.checkout-sub-total {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4B5563;
+    padding-right: 30px;
+}
+
+.checkout-sub-total span {
+    color: var(--prominent-text);
+}
+
+.selected-plan-total,
+.selected-plan--total-price {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--prominent-text);
+}
+
+.selected-plan--total-price {
+    padding-right: 30px;
+}
+
+.selected-plan-cancel {
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #6B7280;
+}
+
+.plan-features {
+    font-family: var(--nunito-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--prominent-text);
+}
+
+.selected-plan-features li{
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4B5563;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.need-help-description{
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4B5563;
+}
+
+.need-help-link{
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--primary-text);
+    text-decoration: none;
+}

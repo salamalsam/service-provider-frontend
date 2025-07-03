@@ -1,0 +1,374 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Client Profile.
+*/
+
+@import url(theme-root.css);
+
+.client-profile-hero-section {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px #0000000D;
+    padding: 50px 20px 24px 20px;
+}
+
+.client-profile-image {
+    width: 120px;
+    height: 120px;
+    background-color: #DDDDDD;
+    border-radius: 50%;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--roboto-font-family);
+    margin-left: 30px;
+}
+
+.btn-edit-client-profile {
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 0px;
+    font-weight: 500;
+    color: var(--off-text);
+    background-color: var(--primary-bg);
+    border: none;
+}
+
+.btn-edit-client-profile-2 {
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 0px;
+    font-weight: 500;
+    color: #374151;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px #0000000D;
+}
+
+.remove-profile-btn {
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #374151;
+    border: 1px solid #D1D5DB;
+}
+
+.client-profile-name {
+    font-family: var(--nunito-font-family);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--prominent-text);
+}
+
+.client-profile-join_date {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-dark-text);
+}
+
+
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-top: 40px;
+}
+
+.tab-button {
+    padding: 16px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-family: var(--roboto-font-family);
+}
+
+.tab-button.active {
+    color: var(--primary-text);
+    border-bottom-color: var(--primary-bg);
+    background-color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 24px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.section-title {
+    font-family: var(--nunito-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--prominent-tex);
+}
+
+.form-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-label {
+    font-family: var(--nunito-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: #6B7280;
+}
+
+.form-value {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--prominent-text);
+}
+
+.about-section {
+    margin-top: 24px;
+}
+
+.settings-section {
+    margin-bottom: 32px;
+    margin-top: 30px;
+}
+
+.settings-title {
+    font-family: var(--nunito-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 0px;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-info {
+    flex: 1;
+}
+
+.setting-name {
+    font-family: var(--nunito-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.setting-description {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background-color: var(--Primary-Navy);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-switch.active {
+    background-color: var(--primary-bg);
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch.active::after {
+    transform: translateX(24px);
+}
+
+.save-profile-button {
+    background-color: var(--primary-bg);
+    color: white;
+    border: none;
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #1976D2;
+}
+
+.placeholder-content {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+.chat-person-pic {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/comment-profile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.history-chat {
+    border-bottom: 1px solid var(--Primary-Navy);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.chat-person-info {
+    width: 75%;
+}
+
+.chat-person-name {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--prominent-text);
+}
+
+.chat-person-chat {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--prominent-text);
+}
+
+.chat-time {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B7280;
+    display: block;
+    text-align: center;
+}
+
+.continue-chat-btn {
+    padding: 8.8px 16px;
+    box-shadow: 0px 1px 2px #0000000D;
+    background-color: var(--primary-bg);
+    border-radius: 6px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--off-text);
+    border: none;
+    margin-top: 15px;
+}
+
+.rate-contri-pic {
+    width: 96px;
+    height: 96px;
+    background-color: #C6EBEA;
+    border-radius: 50%;
+    font-family: var(--roboto-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.rate-contri-location {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.rate-contri-link {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .history-chat-box {
+        align-items: start !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-image-section {
+        flex-wrap: wrap;
+        gap: 20px !important;
+    }
+
+    .tab-button {
+        padding: 16px 10px;
+        font-size: 12px;
+    }
+
+    .form-row {
+        flex-wrap: wrap;
+
+    }
+
+    .form-group {
+        flex: none;
+        width: 100%;
+    }
+
+    .btn-edit-client-profile-2 {
+        margin-top: 20px;
+    }
+
+    .chat-time {
+        text-align: end;
+    }
+
+    .rate-contri-pic {
+        height: 83px;
+    }
+}

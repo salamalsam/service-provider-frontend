@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/single-services.css">
+    <link rel="stylesheet" href="./assets/css/contractor-public-profile.css">
+    <link rel="stylesheet" href="./assets/css/client-profile.css">
+
+    <title>Client Profile</title>
+</head>
+
+<body>
+
+    <div class="main-page-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <ul class="ps-0">
+                    <li>
+                        <a href="" class="d-flex align-items-center gap-2">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3032_21482)">
+                                    <path
+                                        d="M9.36544 2.63441C9.21542 2.48443 9.01197 2.40018 8.79984 2.40018C8.58771 2.40018 8.38426 2.48443 8.23424 2.63441L2.63424 8.23441C2.48851 8.38529 2.40788 8.58737 2.4097 8.79713C2.41152 9.00688 2.49566 9.20753 2.64398 9.35586C2.79231 9.50419 2.99296 9.58832 3.20272 9.59015C3.41247 9.59197 3.61456 9.51133 3.76544 9.36561L3.99984 9.13121V14.4C3.99984 14.6122 4.08412 14.8157 4.23415 14.9657C4.38418 15.1157 4.58766 15.2 4.79984 15.2H6.39984C6.61201 15.2 6.81549 15.1157 6.96552 14.9657C7.11555 14.8157 7.19984 14.6122 7.19984 14.4V12.8C7.19984 12.5878 7.28412 12.3843 7.43415 12.2343C7.58418 12.0843 7.78766 12 7.99984 12H9.59984C9.81201 12 10.0155 12.0843 10.1655 12.2343C10.3156 12.3843 10.3998 12.5878 10.3998 12.8V14.4C10.3998 14.6122 10.4841 14.8157 10.6342 14.9657C10.7842 15.1157 10.9877 15.2 11.1998 15.2H12.7998C13.012 15.2 13.2155 15.1157 13.3655 14.9657C13.5156 14.8157 13.5998 14.6122 13.5998 14.4V9.13121L13.8342 9.36561C13.9851 9.51133 14.1872 9.59197 14.397 9.59015C14.6067 9.58832 14.8074 9.50419 14.9557 9.35586C15.104 9.20753 15.1882 9.00688 15.19 8.79713C15.1918 8.58737 15.1112 8.38529 14.9654 8.23441L9.36544 2.63441Z"
+                                        fill="#374151" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3032_21482">
+                                        <rect width="16" height="16" fill="white"
+                                            transform="translate(0.799805 0.800003)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.551539 12.4484C0.326574 12.2234 0.200195 11.9182 0.200195 11.6C0.200195 11.2818 0.326574 10.9766 0.551539 10.7516L4.50314 6.8L0.551539 2.8484C0.33295 2.62208 0.211996 2.31896 0.21473 2.00432C0.217464 1.68969 0.343667 1.38871 0.566157 1.16622C0.788647 0.943733 1.08962 0.81753 1.40426 0.814796C1.71889 0.812062 2.02202 0.933016 2.24834 1.15161L7.04834 5.95161C7.2733 6.17664 7.39968 6.48181 7.39968 6.8C7.39968 7.1182 7.2733 7.42337 7.04834 7.64841L2.24834 12.4484C2.02331 12.6734 1.71814 12.7997 1.39994 12.7997C1.08174 12.7997 0.776572 12.6734 0.551539 12.4484Z"
+                                fill="#9CA3AF" />
+                        </svg>
+                    </li>
+                    <li><a href="">Services</a></li>
+                    <li>
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.551539 12.4484C0.326574 12.2234 0.200195 11.9182 0.200195 11.6C0.200195 11.2818 0.326574 10.9766 0.551539 10.7516L4.50314 6.8L0.551539 2.8484C0.33295 2.62208 0.211996 2.31896 0.21473 2.00432C0.217464 1.68969 0.343667 1.38871 0.566157 1.16622C0.788647 0.943733 1.08962 0.81753 1.40426 0.814796C1.71889 0.812062 2.02202 0.933016 2.24834 1.15161L7.04834 5.95161C7.2733 6.17664 7.39968 6.48181 7.39968 6.8C7.39968 7.1182 7.2733 7.42337 7.04834 7.64841L2.24834 12.4484C2.02331 12.6734 1.71814 12.7997 1.39994 12.7997C1.08174 12.7997 0.776572 12.6734 0.551539 12.4484Z"
+                                fill="#9CA3AF" />
+                        </svg>
+                    </li>
+                    <li><a>Jean's Trekking Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="client-profile-hero-section">
+                <div class="d-flex align-items-center profile-image-section" style="gap: 60px;">
+                    <div class="client-profile-image">SC</div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button
+                            class="btn-edit-client-profile bg-transaprent d-flex justify-content-center align-items-center gap-2">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3075_4794)">
+                                    <path
+                                        d="M9.91536 4.96667H5.7487C5.30667 4.96667 4.88275 5.14227 4.57019 5.45483C4.25763 5.76739 4.08203 6.19131 4.08203 6.63334V15.8C4.08203 16.242 4.25763 16.666 4.57019 16.9785C4.88275 17.2911 5.30667 17.4667 5.7487 17.4667H14.9154C15.3574 17.4667 15.7813 17.2911 16.0939 16.9785C16.4064 16.666 16.582 16.242 16.582 15.8V11.6333M15.4037 3.78834C15.5574 3.62916 15.7414 3.50219 15.9447 3.41484C16.148 3.32749 16.3667 3.28151 16.588 3.27959C16.8093 3.27767 17.0288 3.31984 17.2336 3.40364C17.4384 3.48744 17.6245 3.61119 17.781 3.76768C17.9375 3.92417 18.0613 4.11026 18.1451 4.31508C18.2289 4.51991 18.271 4.73938 18.2691 4.96067C18.2672 5.18197 18.2212 5.40067 18.1339 5.60401C18.0465 5.80735 17.9195 5.99126 17.7604 6.14501L10.6054 13.3H8.2487V10.9433L15.4037 3.78834Z"
+                                        stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3075_4794">
+                                        <rect width="20" height="20" fill="white"
+                                            transform="translate(0.749023 0.800003)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Upload Picture
+                        </button>
+                        <button class="remove-profile-btn bg-transaprent">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-5 ps-3">
+                    <div class="col-md-7">
+                        <h2 class="client-profile-name">Sophie Client</h2>
+                        <p class="client-profile-join_date mb-0">Member since January 2025</p>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end align-items-center">
+                        <button
+                            class="btn-edit-client-profile-2 bg-transaprent d-flex justify-content-center align-items-center gap-2">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3070_1599)">
+                                    <path
+                                        d="M9.91536 4.96667H5.7487C5.30667 4.96667 4.88275 5.14227 4.57019 5.45483C4.25763 5.76739 4.08203 6.19131 4.08203 6.63334V15.8C4.08203 16.242 4.25763 16.666 4.57019 16.9785C4.88275 17.2911 5.30667 17.4667 5.7487 17.4667H14.9154C15.3574 17.4667 15.7813 17.2911 16.0939 16.9785C16.4064 16.666 16.582 16.242 16.582 15.8V11.6333M15.4037 3.78834C15.5574 3.62916 15.7414 3.50219 15.9447 3.41484C16.148 3.32749 16.3667 3.28151 16.588 3.27959C16.8093 3.27767 17.0288 3.31984 17.2336 3.40364C17.4384 3.48744 17.6245 3.61119 17.781 3.76768C17.9375 3.92417 18.0613 4.11026 18.1451 4.31508C18.2289 4.51991 18.271 4.73938 18.2691 4.96067C18.2672 5.18197 18.2212 5.40067 18.1339 5.60401C18.0465 5.80735 17.9195 5.99126 17.7604 6.14501L10.6054 13.3H8.2487V10.9433L15.4037 3.78834Z"
+                                        stroke="#6B7280" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3070_1599">
+                                        <rect width="20" height="20" fill="white"
+                                            transform="translate(0.749023 0.800003)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Edit Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-header">
+                <button class="tab-button active" onclick="switchTab('personal')">Personal Information</button>
+                <button class="tab-button" onclick="switchTab('chat')">Chat History</button>
+                <button class="tab-button" onclick="switchTab('contractors')">Rated Contractors</button>
+            </div>
+
+            <div id="personal" class="tab-content active">
+                <h2 class="section-title">Personal Information</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <div class="form-value">Sophie Client</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <div class="form-value">sophie.client@example.com</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <div class="form-value">+262 693 456 789</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Location</label>
+                        <div class="form-value">Saint-Denis, Reunion Island</div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <label class="form-label">About</label>
+                    <div class="form-value">Resident of Reunion Island for 5 years. I enjoy exploring the island and
+                        finding reliable local services.</div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">Account Settings</h3>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <div class="setting-name">Email Notifications</div>
+                            <div class="setting-description">Receive email notifications for messages and updates</div>
+                        </div>
+                        <div class="toggle-switch active" onclick="toggleSwitch(this)"></div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <div class="setting-name">SMS Notifications</div>
+                            <div class="setting-description">Receive text messages for important updates</div>
+                        </div>
+                        <div class="toggle-switch active" onclick="toggleSwitch(this)"></div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                        </div>
+                        <div class="toggle-switch active" onclick="toggleSwitch(this)"></div>
+                    </div>
+                </div>
+                <div class="text-end mt-5">
+                    <button class="save-profile-button">Save Changes</button>
+                </div>
+            </div>
+
+            <div id="chat" class="tab-content">
+                <h2 class="section-title">Chat History</h2>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-center gap-3 history-chat-box">
+                        <div class="chat-person-pic"></div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="chat-person-chat m-0">Thank you for booking the volcano tour! we’re looking
+                                forward to seeing you on Sunday 5:00Am.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 text-end text-md-center">
+                        <span class="chat-time">2days ago</span>
+                        <button class="continue-chat-btn">Continue Chat</button>
+                    </div>
+                </div>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-center gap-3 history-chat-box">
+                        <div class="chat-person-pic"></div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="chat-person-chat m-0">Thank you for booking the volcano tour! we’re looking
+                                forward to seeing you on Sunday 5:00Am.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 text-end text-md-center">
+                        <span class="chat-time">2days ago</span>
+                        <button class="continue-chat-btn">Continue Chat</button>
+                    </div>
+                </div>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-center gap-3 history-chat-box">
+                        <div class="chat-person-pic"></div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="chat-person-chat m-0">Thank you for booking the volcano tour! we’re looking
+                                forward to seeing you on Sunday 5:00Am.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 text-end text-md-center">
+                        <span class="chat-time">2days ago</span>
+                        <button class="continue-chat-btn">Continue Chat</button>
+                    </div>
+                </div>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-center gap-3 history-chat-box">
+                        <div class="chat-person-pic"></div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="chat-person-chat m-0">Thank you for booking the volcano tour! we’re looking
+                                forward to seeing you on Sunday 5:00Am.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 text-end text-md-center">
+                        <span class="chat-time">2days ago</span>
+                        <button class="continue-chat-btn">Continue Chat</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contractors" class="tab-content">
+                <h2 class="section-title">Rated Contractors</h2>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-start gap-3 history-chat-box">
+                        <div class="rate-contri-pic d-flex justify-content-center align-items-center">JS</div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="rate-contri-location mb-2">
+                                <span>Volcano Hiking Tour </span>
+                                <span>
+                                    • March 15, 2023
+                                </span>
+                            </p>
+                            <p class="chat-person-chat m-0">The sunrise tour was absolutely magical! Jean was incredibly
+                                knowledgeable about the volcano and the
+                                island's geology. The views were breathtaking and the entire experience was well
+                                organized. Highly
+                                recommend!</p>
+                            <div class="d-flex gap-2 align-items-center mt-2 justify-content-between">
+                                <a href="#" class="rate-contri-link">View Contractor</a>
+                                <a href="#" class="rate-contri-link d-block d-md-none">Edit Review</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-end justify-content-between">
+                        <span class="d-none d-md-block">
+                            <svg width="101" height="20" viewBox="0 0 101 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.84878 2.92696C10.1488 2.00596 11.4518 2.00596 11.7508 2.92696L12.8208 6.21896C12.8862 6.41944 13.0132 6.59414 13.1839 6.71806C13.3545 6.84199 13.5599 6.9088 13.7708 6.90896H17.2328C18.2018 6.90896 18.6038 8.14896 17.8208 8.71896L15.0208 10.753C14.8498 10.877 14.7225 11.052 14.6571 11.2528C14.5917 11.4537 14.5916 11.67 14.6568 11.871L15.7268 15.163C16.0268 16.084 14.9718 16.851 14.1868 16.281L11.3868 14.247C11.216 14.123 11.0103 14.0562 10.7993 14.0562C10.5882 14.0562 10.3826 14.123 10.2118 14.247L7.41178 16.281C6.62778 16.851 5.57378 16.084 5.87278 15.163L6.94278 11.871C7.00795 11.67 7.00784 11.4537 6.94245 11.2528C6.87705 11.052 6.74975 10.877 6.57878 10.753L3.77978 8.71996C2.99678 8.14996 3.39978 6.90996 4.36778 6.90996H7.82878C8.03983 6.91001 8.24548 6.84329 8.4163 6.71935C8.58712 6.59541 8.71435 6.42061 8.77978 6.21996L9.84978 2.92796L9.84878 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M29.8488 2.92696C30.1488 2.00596 31.4518 2.00596 31.7508 2.92696L32.8208 6.21896C32.8862 6.41944 33.0132 6.59414 33.1839 6.71806C33.3545 6.84199 33.5599 6.9088 33.7708 6.90896H37.2328C38.2018 6.90896 38.6038 8.14896 37.8208 8.71896L35.0208 10.753C34.8498 10.877 34.7225 11.052 34.6571 11.2528C34.5917 11.4537 34.5916 11.67 34.6568 11.871L35.7268 15.163C36.0268 16.084 34.9718 16.851 34.1868 16.281L31.3868 14.247C31.216 14.123 31.0103 14.0562 30.7993 14.0562C30.5882 14.0562 30.3826 14.123 30.2118 14.247L27.4118 16.281C26.6278 16.851 25.5738 16.084 25.8728 15.163L26.9428 11.871C27.008 11.67 27.0078 11.4537 26.9424 11.2528C26.8771 11.052 26.7497 10.877 26.5788 10.753L23.7798 8.71996C22.9968 8.14996 23.3998 6.90996 24.3678 6.90996H27.8288C28.0398 6.91001 28.2455 6.84329 28.4163 6.71935C28.5871 6.59541 28.7144 6.42061 28.7798 6.21996L29.8498 2.92796L29.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M49.8488 2.92696C50.1488 2.00596 51.4518 2.00596 51.7508 2.92696L52.8208 6.21896C52.8862 6.41944 53.0132 6.59414 53.1839 6.71806C53.3545 6.84199 53.5599 6.9088 53.7708 6.90896H57.2328C58.2018 6.90896 58.6038 8.14896 57.8208 8.71896L55.0208 10.753C54.8498 10.877 54.7225 11.052 54.6571 11.2528C54.5917 11.4537 54.5916 11.67 54.6568 11.871L55.7268 15.163C56.0268 16.084 54.9718 16.851 54.1868 16.281L51.3868 14.247C51.216 14.123 51.0103 14.0562 50.7993 14.0562C50.5882 14.0562 50.3826 14.123 50.2118 14.247L47.4118 16.281C46.6278 16.851 45.5738 16.084 45.8728 15.163L46.9428 11.871C47.008 11.67 47.0078 11.4537 46.9424 11.2528C46.8771 11.052 46.7497 10.877 46.5788 10.753L43.7798 8.71996C42.9968 8.14996 43.3998 6.90996 44.3678 6.90996H47.8288C48.0398 6.91001 48.2455 6.84329 48.4163 6.71935C48.5871 6.59541 48.7144 6.42061 48.7798 6.21996L49.8498 2.92796L49.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M69.8488 2.92696C70.1488 2.00596 71.4518 2.00596 71.7508 2.92696L72.8208 6.21896C72.8862 6.41944 73.0132 6.59414 73.1839 6.71806C73.3545 6.84199 73.5599 6.9088 73.7708 6.90896H77.2328C78.2018 6.90896 78.6038 8.14896 77.8208 8.71896L75.0208 10.753C74.8498 10.877 74.7225 11.052 74.6571 11.2528C74.5917 11.4537 74.5916 11.67 74.6568 11.871L75.7268 15.163C76.0268 16.084 74.9718 16.851 74.1868 16.281L71.3868 14.247C71.216 14.123 71.0103 14.0562 70.7993 14.0562C70.5882 14.0562 70.3826 14.123 70.2118 14.247L67.4118 16.281C66.6278 16.851 65.5738 16.084 65.8728 15.163L66.9428 11.871C67.008 11.67 67.0078 11.4537 66.9424 11.2528C66.8771 11.052 66.7497 10.877 66.5788 10.753L63.7798 8.71996C62.9968 8.14996 63.3998 6.90996 64.3678 6.90996H67.8288C68.0398 6.91001 68.2455 6.84329 68.4163 6.71935C68.5871 6.59541 68.7144 6.42061 68.7798 6.21996L69.8498 2.92796L69.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M89.8488 2.92696C90.1488 2.00596 91.4518 2.00596 91.7508 2.92696L92.8208 6.21896C92.8862 6.41944 93.0132 6.59414 93.1839 6.71806C93.3545 6.84199 93.5599 6.9088 93.7708 6.90896H97.2328C98.2018 6.90896 98.6038 8.14896 97.8208 8.71896L95.0208 10.753C94.8498 10.877 94.7225 11.052 94.6571 11.2528C94.5917 11.4537 94.5916 11.67 94.6568 11.871L95.7268 15.163C96.0268 16.084 94.9718 16.851 94.1868 16.281L91.3868 14.247C91.216 14.123 91.0103 14.0562 90.7993 14.0562C90.5882 14.0562 90.3826 14.123 90.2118 14.247L87.4118 16.281C86.6278 16.851 85.5738 16.084 85.8728 15.163L86.9428 11.871C87.008 11.67 87.0078 11.4537 86.9424 11.2528C86.8771 11.052 86.7497 10.877 86.5788 10.753L83.7798 8.71996C82.9968 8.14996 83.3998 6.90996 84.3678 6.90996H87.8288C88.0398 6.91001 88.2455 6.84329 88.4163 6.71935C88.5871 6.59541 88.7144 6.42061 88.7798 6.21996L89.8498 2.92796L89.8488 2.92696Z"
+                                    fill="#FACC15" />
+                            </svg>
+                        </span>
+                        <a href="#" class="rate-contri-link d-none d-md-block">Edit Review</a>
+                    </div>
+                </div>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-start gap-3 history-chat-box">
+                        <div class="rate-contri-pic d-flex justify-content-center align-items-center">JS</div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="rate-contri-location mb-2">
+                                <span>Volcano Hiking Tour </span>
+                                <span>
+                                    • March 15, 2023
+                                </span>
+                            </p>
+                            <p class="chat-person-chat m-0">The sunrise tour was absolutely magical! Jean was incredibly
+                                knowledgeable about the volcano and the
+                                island's geology. The views were breathtaking and the entire experience was well
+                                organized. Highly
+                                recommend!</p>
+                            <div class="d-flex gap-2 align-items-center mt-2 justify-content-between">
+                                <a href="#" class="rate-contri-link">View Contractor</a>
+                                <a href="#" class="rate-contri-link d-block d-md-none">Edit Review</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-end justify-content-between">
+                        <span class="d-none d-md-block">
+                            <svg width="101" height="20" viewBox="0 0 101 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.84878 2.92696C10.1488 2.00596 11.4518 2.00596 11.7508 2.92696L12.8208 6.21896C12.8862 6.41944 13.0132 6.59414 13.1839 6.71806C13.3545 6.84199 13.5599 6.9088 13.7708 6.90896H17.2328C18.2018 6.90896 18.6038 8.14896 17.8208 8.71896L15.0208 10.753C14.8498 10.877 14.7225 11.052 14.6571 11.2528C14.5917 11.4537 14.5916 11.67 14.6568 11.871L15.7268 15.163C16.0268 16.084 14.9718 16.851 14.1868 16.281L11.3868 14.247C11.216 14.123 11.0103 14.0562 10.7993 14.0562C10.5882 14.0562 10.3826 14.123 10.2118 14.247L7.41178 16.281C6.62778 16.851 5.57378 16.084 5.87278 15.163L6.94278 11.871C7.00795 11.67 7.00784 11.4537 6.94245 11.2528C6.87705 11.052 6.74975 10.877 6.57878 10.753L3.77978 8.71996C2.99678 8.14996 3.39978 6.90996 4.36778 6.90996H7.82878C8.03983 6.91001 8.24548 6.84329 8.4163 6.71935C8.58712 6.59541 8.71435 6.42061 8.77978 6.21996L9.84978 2.92796L9.84878 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M29.8488 2.92696C30.1488 2.00596 31.4518 2.00596 31.7508 2.92696L32.8208 6.21896C32.8862 6.41944 33.0132 6.59414 33.1839 6.71806C33.3545 6.84199 33.5599 6.9088 33.7708 6.90896H37.2328C38.2018 6.90896 38.6038 8.14896 37.8208 8.71896L35.0208 10.753C34.8498 10.877 34.7225 11.052 34.6571 11.2528C34.5917 11.4537 34.5916 11.67 34.6568 11.871L35.7268 15.163C36.0268 16.084 34.9718 16.851 34.1868 16.281L31.3868 14.247C31.216 14.123 31.0103 14.0562 30.7993 14.0562C30.5882 14.0562 30.3826 14.123 30.2118 14.247L27.4118 16.281C26.6278 16.851 25.5738 16.084 25.8728 15.163L26.9428 11.871C27.008 11.67 27.0078 11.4537 26.9424 11.2528C26.8771 11.052 26.7497 10.877 26.5788 10.753L23.7798 8.71996C22.9968 8.14996 23.3998 6.90996 24.3678 6.90996H27.8288C28.0398 6.91001 28.2455 6.84329 28.4163 6.71935C28.5871 6.59541 28.7144 6.42061 28.7798 6.21996L29.8498 2.92796L29.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M49.8488 2.92696C50.1488 2.00596 51.4518 2.00596 51.7508 2.92696L52.8208 6.21896C52.8862 6.41944 53.0132 6.59414 53.1839 6.71806C53.3545 6.84199 53.5599 6.9088 53.7708 6.90896H57.2328C58.2018 6.90896 58.6038 8.14896 57.8208 8.71896L55.0208 10.753C54.8498 10.877 54.7225 11.052 54.6571 11.2528C54.5917 11.4537 54.5916 11.67 54.6568 11.871L55.7268 15.163C56.0268 16.084 54.9718 16.851 54.1868 16.281L51.3868 14.247C51.216 14.123 51.0103 14.0562 50.7993 14.0562C50.5882 14.0562 50.3826 14.123 50.2118 14.247L47.4118 16.281C46.6278 16.851 45.5738 16.084 45.8728 15.163L46.9428 11.871C47.008 11.67 47.0078 11.4537 46.9424 11.2528C46.8771 11.052 46.7497 10.877 46.5788 10.753L43.7798 8.71996C42.9968 8.14996 43.3998 6.90996 44.3678 6.90996H47.8288C48.0398 6.91001 48.2455 6.84329 48.4163 6.71935C48.5871 6.59541 48.7144 6.42061 48.7798 6.21996L49.8498 2.92796L49.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M69.8488 2.92696C70.1488 2.00596 71.4518 2.00596 71.7508 2.92696L72.8208 6.21896C72.8862 6.41944 73.0132 6.59414 73.1839 6.71806C73.3545 6.84199 73.5599 6.9088 73.7708 6.90896H77.2328C78.2018 6.90896 78.6038 8.14896 77.8208 8.71896L75.0208 10.753C74.8498 10.877 74.7225 11.052 74.6571 11.2528C74.5917 11.4537 74.5916 11.67 74.6568 11.871L75.7268 15.163C76.0268 16.084 74.9718 16.851 74.1868 16.281L71.3868 14.247C71.216 14.123 71.0103 14.0562 70.7993 14.0562C70.5882 14.0562 70.3826 14.123 70.2118 14.247L67.4118 16.281C66.6278 16.851 65.5738 16.084 65.8728 15.163L66.9428 11.871C67.008 11.67 67.0078 11.4537 66.9424 11.2528C66.8771 11.052 66.7497 10.877 66.5788 10.753L63.7798 8.71996C62.9968 8.14996 63.3998 6.90996 64.3678 6.90996H67.8288C68.0398 6.91001 68.2455 6.84329 68.4163 6.71935C68.5871 6.59541 68.7144 6.42061 68.7798 6.21996L69.8498 2.92796L69.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M89.8488 2.92696C90.1488 2.00596 91.4518 2.00596 91.7508 2.92696L92.8208 6.21896C92.8862 6.41944 93.0132 6.59414 93.1839 6.71806C93.3545 6.84199 93.5599 6.9088 93.7708 6.90896H97.2328C98.2018 6.90896 98.6038 8.14896 97.8208 8.71896L95.0208 10.753C94.8498 10.877 94.7225 11.052 94.6571 11.2528C94.5917 11.4537 94.5916 11.67 94.6568 11.871L95.7268 15.163C96.0268 16.084 94.9718 16.851 94.1868 16.281L91.3868 14.247C91.216 14.123 91.0103 14.0562 90.7993 14.0562C90.5882 14.0562 90.3826 14.123 90.2118 14.247L87.4118 16.281C86.6278 16.851 85.5738 16.084 85.8728 15.163L86.9428 11.871C87.008 11.67 87.0078 11.4537 86.9424 11.2528C86.8771 11.052 86.7497 10.877 86.5788 10.753L83.7798 8.71996C82.9968 8.14996 83.3998 6.90996 84.3678 6.90996H87.8288C88.0398 6.91001 88.2455 6.84329 88.4163 6.71935C88.5871 6.59541 88.7144 6.42061 88.7798 6.21996L89.8498 2.92796L89.8488 2.92696Z"
+                                    fill="#FACC15" />
+                            </svg>
+                        </span>
+                        <a href="#" class="rate-contri-link d-none d-md-block">Edit Review</a>
+                    </div>
+                </div>
+                <div class="row history-chat">
+                    <div class="col-lg-10 col-md-8 col-sm-12 d-flex align-items-start gap-3 history-chat-box">
+                        <div class="rate-contri-pic d-flex justify-content-center align-items-center">JS</div>
+                        <div class="chat-person-info">
+                            <h3 class="chat-person-name">Jean’s Trekking Tours</h3>
+                            <p class="rate-contri-location mb-2">
+                                <span>Volcano Hiking Tour </span>
+                                <span>
+                                    • March 15, 2023
+                                </span>
+                            </p>
+                            <p class="chat-person-chat m-0">The sunrise tour was absolutely magical! Jean was incredibly
+                                knowledgeable about the volcano and the
+                                island's geology. The views were breathtaking and the entire experience was well
+                                organized. Highly
+                                recommend!</p>
+                            <div class="d-flex gap-2 align-items-center mt-2 justify-content-between">
+                                <a href="#" class="rate-contri-link">View Contractor</a>
+                                <a href="#" class="rate-contri-link d-block d-md-none">Edit Review</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 d-flex flex-column align-items-end justify-content-between">
+                        <span class="d-none d-md-block">
+                            <svg width="101" height="20" viewBox="0 0 101 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.84878 2.92696C10.1488 2.00596 11.4518 2.00596 11.7508 2.92696L12.8208 6.21896C12.8862 6.41944 13.0132 6.59414 13.1839 6.71806C13.3545 6.84199 13.5599 6.9088 13.7708 6.90896H17.2328C18.2018 6.90896 18.6038 8.14896 17.8208 8.71896L15.0208 10.753C14.8498 10.877 14.7225 11.052 14.6571 11.2528C14.5917 11.4537 14.5916 11.67 14.6568 11.871L15.7268 15.163C16.0268 16.084 14.9718 16.851 14.1868 16.281L11.3868 14.247C11.216 14.123 11.0103 14.0562 10.7993 14.0562C10.5882 14.0562 10.3826 14.123 10.2118 14.247L7.41178 16.281C6.62778 16.851 5.57378 16.084 5.87278 15.163L6.94278 11.871C7.00795 11.67 7.00784 11.4537 6.94245 11.2528C6.87705 11.052 6.74975 10.877 6.57878 10.753L3.77978 8.71996C2.99678 8.14996 3.39978 6.90996 4.36778 6.90996H7.82878C8.03983 6.91001 8.24548 6.84329 8.4163 6.71935C8.58712 6.59541 8.71435 6.42061 8.77978 6.21996L9.84978 2.92796L9.84878 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M29.8488 2.92696C30.1488 2.00596 31.4518 2.00596 31.7508 2.92696L32.8208 6.21896C32.8862 6.41944 33.0132 6.59414 33.1839 6.71806C33.3545 6.84199 33.5599 6.9088 33.7708 6.90896H37.2328C38.2018 6.90896 38.6038 8.14896 37.8208 8.71896L35.0208 10.753C34.8498 10.877 34.7225 11.052 34.6571 11.2528C34.5917 11.4537 34.5916 11.67 34.6568 11.871L35.7268 15.163C36.0268 16.084 34.9718 16.851 34.1868 16.281L31.3868 14.247C31.216 14.123 31.0103 14.0562 30.7993 14.0562C30.5882 14.0562 30.3826 14.123 30.2118 14.247L27.4118 16.281C26.6278 16.851 25.5738 16.084 25.8728 15.163L26.9428 11.871C27.008 11.67 27.0078 11.4537 26.9424 11.2528C26.8771 11.052 26.7497 10.877 26.5788 10.753L23.7798 8.71996C22.9968 8.14996 23.3998 6.90996 24.3678 6.90996H27.8288C28.0398 6.91001 28.2455 6.84329 28.4163 6.71935C28.5871 6.59541 28.7144 6.42061 28.7798 6.21996L29.8498 2.92796L29.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M49.8488 2.92696C50.1488 2.00596 51.4518 2.00596 51.7508 2.92696L52.8208 6.21896C52.8862 6.41944 53.0132 6.59414 53.1839 6.71806C53.3545 6.84199 53.5599 6.9088 53.7708 6.90896H57.2328C58.2018 6.90896 58.6038 8.14896 57.8208 8.71896L55.0208 10.753C54.8498 10.877 54.7225 11.052 54.6571 11.2528C54.5917 11.4537 54.5916 11.67 54.6568 11.871L55.7268 15.163C56.0268 16.084 54.9718 16.851 54.1868 16.281L51.3868 14.247C51.216 14.123 51.0103 14.0562 50.7993 14.0562C50.5882 14.0562 50.3826 14.123 50.2118 14.247L47.4118 16.281C46.6278 16.851 45.5738 16.084 45.8728 15.163L46.9428 11.871C47.008 11.67 47.0078 11.4537 46.9424 11.2528C46.8771 11.052 46.7497 10.877 46.5788 10.753L43.7798 8.71996C42.9968 8.14996 43.3998 6.90996 44.3678 6.90996H47.8288C48.0398 6.91001 48.2455 6.84329 48.4163 6.71935C48.5871 6.59541 48.7144 6.42061 48.7798 6.21996L49.8498 2.92796L49.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M69.8488 2.92696C70.1488 2.00596 71.4518 2.00596 71.7508 2.92696L72.8208 6.21896C72.8862 6.41944 73.0132 6.59414 73.1839 6.71806C73.3545 6.84199 73.5599 6.9088 73.7708 6.90896H77.2328C78.2018 6.90896 78.6038 8.14896 77.8208 8.71896L75.0208 10.753C74.8498 10.877 74.7225 11.052 74.6571 11.2528C74.5917 11.4537 74.5916 11.67 74.6568 11.871L75.7268 15.163C76.0268 16.084 74.9718 16.851 74.1868 16.281L71.3868 14.247C71.216 14.123 71.0103 14.0562 70.7993 14.0562C70.5882 14.0562 70.3826 14.123 70.2118 14.247L67.4118 16.281C66.6278 16.851 65.5738 16.084 65.8728 15.163L66.9428 11.871C67.008 11.67 67.0078 11.4537 66.9424 11.2528C66.8771 11.052 66.7497 10.877 66.5788 10.753L63.7798 8.71996C62.9968 8.14996 63.3998 6.90996 64.3678 6.90996H67.8288C68.0398 6.91001 68.2455 6.84329 68.4163 6.71935C68.5871 6.59541 68.7144 6.42061 68.7798 6.21996L69.8498 2.92796L69.8488 2.92696Z"
+                                    fill="#FACC15" />
+                                <path
+                                    d="M89.8488 2.92696C90.1488 2.00596 91.4518 2.00596 91.7508 2.92696L92.8208 6.21896C92.8862 6.41944 93.0132 6.59414 93.1839 6.71806C93.3545 6.84199 93.5599 6.9088 93.7708 6.90896H97.2328C98.2018 6.90896 98.6038 8.14896 97.8208 8.71896L95.0208 10.753C94.8498 10.877 94.7225 11.052 94.6571 11.2528C94.5917 11.4537 94.5916 11.67 94.6568 11.871L95.7268 15.163C96.0268 16.084 94.9718 16.851 94.1868 16.281L91.3868 14.247C91.216 14.123 91.0103 14.0562 90.7993 14.0562C90.5882 14.0562 90.3826 14.123 90.2118 14.247L87.4118 16.281C86.6278 16.851 85.5738 16.084 85.8728 15.163L86.9428 11.871C87.008 11.67 87.0078 11.4537 86.9424 11.2528C86.8771 11.052 86.7497 10.877 86.5788 10.753L83.7798 8.71996C82.9968 8.14996 83.3998 6.90996 84.3678 6.90996H87.8288C88.0398 6.91001 88.2455 6.84329 88.4163 6.71935C88.5871 6.59541 88.7144 6.42061 88.7798 6.21996L89.8498 2.92796L89.8488 2.92696Z"
+                                    fill="#FACC15" />
+                            </svg>
+                        </span>
+                        <a href="#" class="rate-contri-link d-none d-md-block">Edit Review</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row top-footer">
+                <div class="col-md-5">
+                    <img src="./assets/images/footer-logo.png" class="footer-logo" alt="">
+                    <p class="footer-description">Design amazing digital experiences that create more happy in the
+                        world.</p>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="footer-subheading">Product</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Solutions <span class="new">New</span></a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Releases</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="footer-subheading">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer-subheading">Stay up to date</h4>
+                    <div class="d-flex justify-content-between align-items-center newsletter">
+                        <input type="email" class="footer-field" placeholder="Email your email" required>
+                        <button type="submit" class="footer-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copy-right-text">© 2025 reunion island. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-end-list d-flex align-items-center gap-3 justify-content-end">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="./assets/js/general.js"></script>
+
+    <script>
+        function switchTab(tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function toggleSwitch(element) {
+            element.classList.toggle('active');
+        }
+
+        document.querySelector('.save-button').addEventListener('click', function () {
+            this.textContent = 'Saved!';
+            this.style.backgroundColor = '#4CAF50';
+
+            setTimeout(() => {
+                this.textContent = 'Save Changes';
+                this.style.backgroundColor = '#2196F3';
+            }, 2000);
+        });
+    </script>
+
+</body>
+
+</html>
