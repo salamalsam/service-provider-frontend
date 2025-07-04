@@ -114,7 +114,7 @@ Descriptipon:   This file contains all styling properties for the Checkout.
     color: var(--prominent-text);
 }
 
-.selected-plan-features li{
+.selected-plan-features li {
     font-family: var(--roboto-font-family);
     font-size: 16px;
     font-weight: 400;
@@ -124,7 +124,7 @@ Descriptipon:   This file contains all styling properties for the Checkout.
     padding-bottom: 10px;
 }
 
-.need-help-description{
+.need-help-description {
     font-family: var(--roboto-font-family);
     font-size: 16px;
     font-weight: 400;
@@ -132,11 +132,78 @@ Descriptipon:   This file contains all styling properties for the Checkout.
     color: #4B5563;
 }
 
-.need-help-link{
+.need-help-link {
     font-family: var(--roboto-font-family);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: var(--primary-text);
     text-decoration: none;
+}
+
+.billing-info {
+    font-family: var(--nunito-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #374151;
+}
+
+.checkout-form-label {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #374151;
+}
+
+.checkout-form-control {
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px #0000000D;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #374151;
+}
+
+.checkout-form-control:focus-visible {
+    outline: none !important;
+}
+
+.checkout-payment-label{
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #374151;
+}
+
+.checkout-term-check{
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #374151;
+}
+
+.checkout-term-check a{
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.btn-checkout{
+    padding: 12.8px 16.8px;
+    border-radius: 6px;
+    background-color: var(--primary-bg);
+    color: var(--off-text);
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
 }
