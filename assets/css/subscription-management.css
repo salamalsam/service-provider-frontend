@@ -1,0 +1,199 @@
+/*
+Developer:      Awais Goraya
+Developer URL:  https://www.linkedin.com/in/awais-goraya-867228235/
+Company:        Developera
+Company URL:    developera.io
+Descriptipon:   This file contains all styling properties for the Subscription Management.
+*/
+
+@import url(theme-root.css);
+
+.subscription-management-title-container,
+.current-plan-detail,
+.currentpayment-method {
+    padding: 24px;
+    border-bottom: 1px solid var(--Primary-Navy);
+}
+
+.subscription-management-title {
+    font-family: var(--nunito-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--prominent-text);
+}
+
+.subscription-management-description {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--prominent-dark-text);
+}
+
+.current-plan-detail-box {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #EFF6FF;
+}
+
+.current-plan-name {
+    font-family: var(--nunito-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--prominent-text);
+}
+
+.current-plan-name span {
+    padding: 2px 10px;
+    background-color: #DCFCE7;
+    border-radius: 50px;
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #166534;
+}
+
+.current-plan-price {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--prominent-dark-text);
+}
+
+.upgrade-plan-btn {
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    border: 1px solid #2563EB;
+    background-color: #2563EB;
+    box-shadow: 0px 1px 2px #0000000D;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--off-text);
+}
+
+.cancel-subscription-btn {
+    padding: 8.8px 16.8px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px #0000000D;
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #374151;
+    background-color: var(--off-bg);
+}
+
+.box-current-plan {
+    border-bottom: 1px solid var(--Primary-Navy);
+}
+
+.subscription-start-date {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.subscription-start-date span {
+    color: var(--prominent-text);
+    font-weight: 500;
+}
+
+.current-plan-features {
+    font-family: var(--nunito-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #374151;
+}
+
+.update-payment-method {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+    color: #2563EB;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+.person-card-detail {
+    background-color: #F9FAFB;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-family: var(--roboto-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--prominent-text);
+}
+
+.card-expiry {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.billing-history {
+    padding: 24px;
+}
+
+.billing-history-table {
+    width: 100%;
+}
+
+.billing-history-table thead tr th {
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #6B7280;
+    background-color: #F9FAFB;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.billing-history-table tbody tr td {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--prominent-text);
+    padding: 10px 20px;
+    border-top: 1px solid var(--Primary-Navy);
+    background-color: var(--off-bg);
+}
+
+.payment-status {
+    padding: 2px 10px;
+    background-color: #DCFCE7;
+    border-radius: 50px;
+    font-family: var(--roboto-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.recipet-download {
+    font-family: var(--roboto-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #2563EB;
+    text-decoration: none;
+}
