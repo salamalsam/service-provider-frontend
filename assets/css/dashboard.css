@@ -369,11 +369,11 @@ Descriptipon:   This file contains all styling properties for the Subscription M
     object-fit: contain;
 }
 
-.recent-activity-icon{
+.recent-activity-icon {
     width: 8%;
 }
 
-.recent-activity-info{
+.recent-activity-info {
     width: 92%;
 }
 
@@ -385,7 +385,7 @@ Descriptipon:   This file contains all styling properties for the Subscription M
     color: var(--prominent-text);
 }
 
-.recent-activity-title span{
+.recent-activity-title span {
     font-family: var(--roboto-font-family);
     font-size: 14px;
     line-height: 20px;
@@ -393,12 +393,357 @@ Descriptipon:   This file contains all styling properties for the Subscription M
     color: #6B7280;
 }
 
-.recent-activity-info p{
+.recent-activity-info p {
     font-family: var(--roboto-font-family);
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
     color: var(--prominent-dark-text);
+}
+
+.dashboard-chat {
+    background-color: var(--off-bg);
+    height: 99%;
+}
+
+.messages-list {
+    width: 28%;
+}
+
+.chat-area-box {
+    width: 77%;
+    overflow: hidden;
+}
+
+.message-list-header {
+    padding: 20px 24px;
+}
+
+.message-list-header h2 {
+    font-family: var(--inter-font-family);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--prominent-text);
+}
+
+.message-list-header h2 span {
+    padding: 2px 8px;
+    border-radius: 16px;
+    background-color: #EDF2F0;
+    font-family: var(--inter-font-family);
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #047827;
+}
+
+.message-search {
+    padding: 10px 14px 10px 45px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #667085;
+    width: 100%;
+}
+
+.searchmessage-icon {
+    position: absolute;
+    top: 29px;
+    left: 14px;
+}
+
+.message-display {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EAECF0;
+
+}
+
+.message-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #AA9C75;
+}
+
+.message-profile span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #12B76A;
+    border: 1px solid var(--off-bg);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.message-profile-info h3 {
+    font-family: var(--inter-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.message-profile-info p {
+    font-family: var(--inter-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #344054;
+}
+
+.message-time p {
+    font-family: var(--inter-font-family);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #667085;
+}
+
+.message-display-message {
+    font-family: var(--inter-font-family);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #475467;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message-unread {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #047827;
+    position: absolute;
+    top: 40px;
+}
+
+.message-active {
+    background-color: #F9FAFB;
+}
+
+.chat-area-header {
+    padding: 20px 24px;
+}
+
+.area-profile-img img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #AA9C75;
+}
+
+.area-profile-img span {
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+}
+
+.message-username h3 {
+    font-family: var(--inter-font-family);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--prominent-text);
+}
+
+.message-username h3 span {
+    padding: 2px 8px;
+    background-color: #ECFDF3;
+    border-radius: 16px;
+    font-family: var(--inter-font-family);
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #027A48;
+}
+
+.btn-message-line {
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.message-content {
+    padding: 0px 32px 32px;
+    background-color: #FCFCFD;
+    height: 100vh;
+}
+
+.messages {
+    height: 65%;
+    min-height: 65%;
+    overflow: auto;
+
+    /* Webkit scrollbar styling */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #ccc transparent;
+    /* For Firefox */
+}
+
+.messages::-webkit-scrollbar {
+    width: 1px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.today-message span:first-child {
+    display: block;
+    width: 46%;
+    height: 1px;
+    background-color: #EAECF0;
+}
+
+.today-message span:nth-child(2) {
+    font-family: var(--inter-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #475467;
+    padding: 0px 10px;
+}
+
+.today-message span:last-child {
+    display: block;
+    width: 48%;
+    height: 1px;
+    background-color: #EAECF0;
+}
+
+.receiver-chat {
+    width: 65%;
+
+}
+
+.receiver-name-time {
+    width: 92%;
+}
+
+.receiver-name-time h3,
+.sender-chat h3 {
+    font-family: var(--inter-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #344054;
+}
+
+.receiver-name-time h3 span,
+.sender-chat h3 span {
+    font-family: var(--inter-font-family);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #475467;
+}
+
+.receiver-name-time p {
+    padding: 10px 14px;
+    background-color: #F2F4F7;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--prominent-text);
+}
+
+.sender-chat {
+    width: 51%;
+    margin-left: auto;
+}
+
+.sender-chat p {
+    padding: 10px 14px;
+    background-color: #047827;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--off-text);
+}
+
+.message-type {
+    padding: 12px 14px;
+    height: 104px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-family: var(--inter-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #667085;
+    background-color: transparent;
+    width: 100%;
+}
+
+.message-type:focus-visible {
+    outline: none;
+}
+
+.message-send-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #047827;
+    font-family: var(--inter-font-family);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--off-text);
+    border: none;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.message-send-icon {
+    padding: 10px 16px;
+    position: absolute;
+    right: 90px;
+    bottom: 13px;
+    border: none;
+    background-color: transparent;
+}
+
+.message-send-icon-2 {
+    padding: 10px 16px;
+    position: absolute;
+    right: 120px;
+    bottom: 13px;
+    border: none;
+    background-color: transparent;
+}
+
+.chat-close, .dashboard-menubar-btn-chat{
+    display: none;
 }
 
 
@@ -438,13 +783,63 @@ Descriptipon:   This file contains all styling properties for the Subscription M
         top: 3px;
         right: 10px;
     }
-    .dash-chart-img{
+
+    .dashboard-menubar-btn-chat {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 28px;
+        border: none;
+        padding: 0px;
+        background-color: transparent;
+    }
+
+    .dash-chart-img {
         height: auto;
     }
-    .dashboard-analytics-card{
+
+    .dashboard-analytics-card {
         margin-bottom: 20px;
     }
-    .dashboard-content{
+
+    .dashboard-content {
         height: 100%;
+    }
+
+    .messages-list {
+        width: 100%;
+    }
+
+    .chat-area-box {
+        display: none;
+        width: 100%;
+    }
+
+    .show-hide-chat {
+        display: block !important;
+        position: absolute;
+        z-index: 99;
+        top: 0px;
+    }
+
+    .chat-area-header {
+        background-color: var(--off-bg);
+    }
+
+    .receiver-chat{
+        width: 100%;
+    }
+
+    .sender-chat{
+        width: 100%;
+    }
+
+    .chat-close{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        border: none;
+        background-color: transparent;
     }
 }
