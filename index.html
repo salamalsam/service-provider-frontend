@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Page Index</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      position: relative;
+    }
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-size: 18px;
+    }
+    .preview {
+      display: none;
+      position: absolute;
+      left: 220px;
+      top: -10px;
+      width: 400px;
+      height: 300px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      z-index: 10;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Available Pages</h1>
+  <ul id="pageList"></ul>
+
+  <script>
+    const pages = [
+      'auth.html',
+      'checkout.html',
+      'client-profile.html',
+      'contractor-public-profile.html',
+      'dashboard-chat.html',
+      'dashboard-services.html',
+      'dashboard.html',
+      'home.html',
+      'payment-successful.html',
+      'services.html',
+      'single-services.html',
+      'subscription-managemant.html',
+      'subscription.html'
+    ];
+
+    const list = document.getElementById('pageList');
+
+    pages.forEach(page => {
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = page;
+      link.textContent = page;
+      link.target = "_blank";
+
+      // Preview container
+      const preview = document.createElement('div');
+      preview.className = 'preview';
+      const iframe = document.createElement('iframe');
+      preview.appendChild(iframe);
+
+      // Show preview on hover
+      link.addEventListener('mouseenter', () => {
+        iframe.src = page;
+        preview.style.display = 'block';
+      });
+
+      link.addEventListener('mouseleave', () => {
+        preview.style.display = 'none';
+        iframe.src = ''; // optional: clear src to save memory
+      });
+
+      li.appendChild(link);
+      li.appendChild(preview);
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
