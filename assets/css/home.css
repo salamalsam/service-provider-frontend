@@ -702,10 +702,6 @@ Descriptipon:   This file contains all styling properties for the User Profile.
         min-width: 330px;
     }
 
-    .header-profile {
-        display: none !important;
-    }
-
     .navbar-container .hamburger-lines {
         right: 15px;
     }

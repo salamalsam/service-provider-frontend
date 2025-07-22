@@ -42,6 +42,51 @@
                                 <li><a href="#">Subscription</a></li>
                                 <li><a href="#">Agent</a></li>
                                 <li><a href="#">Compare</a></li>
+                                <div class="header-profile d-flex gap-2 position-relative d-md-none d-block mt-3">
+                                    <img src="./assets/images/profile.png" alt="profile-img" class="profile-img">
+                                    <button class="profile-btn bg-transaprent" id="profile-dropdown-btn">
+                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.244078 0.910742C0.569515 0.585305 1.09715 0.585305 1.42259 0.910742L5.83333 5.32149L10.2441 0.910742C10.5695 0.585305 11.0972 0.585305 11.4226 0.910742C11.748 1.23618 11.748 1.76382 11.4226 2.08925L6.42259 7.08925C6.09715 7.41469 5.56951 7.41469 5.24408 7.08925L0.244078 2.08925C-0.0813592 1.76382 -0.0813592 1.23618 0.244078 0.910742Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <div class="profile-dropdown" id="profiledropdown">
+                                        <ul style="border: 1px solid #000;">
+                                            <li>
+                                                <a href="#" class="d-flex align-items-center gap-2">
+                                                    <svg class="icon profile-icon" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" fill="#6b7280">
+                                                        <path
+                                                            d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9.5L21 9ZM3 9L9 9.5V7.5L3 7V9ZM15 10.5V19L13.5 21L12 19.5L10.5 21L9 19V10.5H15Z" />
+                                                    </svg>
+                                                    My Profile
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-flex align-items-center gap-2">
+                                                    <svg class="icon settings-icon" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" fill="#6b7280">
+                                                        <path
+                                                            d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.61L12.75,4H11.25Z" />
+                                                    </svg>
+                                                    Settings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-flex align-items-center gap-2">
+                                                    <svg class="icon logout-icon" xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24" viewBox="0 0 24 24" fill="#6b7280">
+                                                        <path
+                                                            d="M14.08,15.59L16.67,13H7V11H16.67L14.08,8.41L15.49,7L20.49,12L15.49,17L14.08,15.59M19,3A2,2 0 0,1 21,5V9.67L19,7.67V5H5V19H19V16.33L21,14.33V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19Z" />
+                                                    </svg>
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
                     </nav>
@@ -54,16 +99,42 @@
                                 stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <button class="header-message bg-transaprent">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M14.9997 19C14.9997 20.6569 13.6566 22 11.9997 22C10.3429 22 8.99972 20.6569 8.99972 19M13.7962 6.23856C14.2317 5.78864 14.4997 5.17562 14.4997 4.5C14.4997 3.11929 13.3804 2 11.9997 2C10.619 2 9.49972 3.11929 9.49972 4.5C9.49972 5.17562 9.76772 5.78864 10.2032 6.23856M17.9997 11.2C17.9997 9.82087 17.3676 8.49823 16.2424 7.52304C15.1171 6.54786 13.591 6 11.9997 6C10.4084 6 8.8823 6.54786 7.75708 7.52304C6.63186 8.49823 5.99972 9.82087 5.99972 11.2C5.99972 13.4818 5.43385 15.1506 4.72778 16.3447C3.92306 17.7056 3.5207 18.3861 3.53659 18.5486C3.55476 18.7346 3.58824 18.7933 3.73906 18.9036C3.87089 19 4.53323 19 5.85791 19H18.1415C19.4662 19 20.1286 19 20.2604 18.9036C20.4112 18.7933 20.4447 18.7346 20.4629 18.5486C20.4787 18.3861 20.0764 17.7056 19.2717 16.3447C18.5656 15.1506 17.9997 13.4818 17.9997 11.2Z"
-                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <div class="header-profile d-flex gap-2">
+                    <div class="position-relative notification-container">
+                        <button class="header-message bg-transaprent" id="notification-btn" onclick="toggleDropdown()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9997 19C14.9997 20.6569 13.6566 22 11.9997 22C10.3429 22 8.99972 20.6569 8.99972 19M13.7962 6.23856C14.2317 5.78864 14.4997 5.17562 14.4997 4.5C14.4997 3.11929 13.3804 2 11.9997 2C10.619 2 9.49972 3.11929 9.49972 4.5C9.49972 5.17562 9.76772 5.78864 10.2032 6.23856M17.9997 11.2C17.9997 9.82087 17.3676 8.49823 16.2424 7.52304C15.1171 6.54786 13.591 6 11.9997 6C10.4084 6 8.8823 6.54786 7.75708 7.52304C6.63186 8.49823 5.99972 9.82087 5.99972 11.2C5.99972 13.4818 5.43385 15.1506 4.72778 16.3447C3.92306 17.7056 3.5207 18.3861 3.53659 18.5486C3.55476 18.7346 3.58824 18.7933 3.73906 18.9036C3.87089 19 4.53323 19 5.85791 19H18.1415C19.4662 19 20.1286 19 20.2604 18.9036C20.4112 18.7933 20.4447 18.7346 20.4629 18.5486C20.4787 18.3861 20.0764 17.7056 19.2717 16.3447C18.5656 15.1506 17.9997 13.4818 17.9997 11.2Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="notificationdropdown" id="notification-dropdown">
+                            <div class="dropdown-header">Notifications</div>
+
+                            <div class="notification-item unread">
+                                <div class="notification-text">New message from John</div>
+                                <div class="notification-time">2 mins ago</div>
+                            </div>
+
+                            <div class="notification-item unread">
+                                <div class="notification-text">Your order has been shipped</div>
+                                <div class="notification-time">1 hour ago</div>
+                            </div>
+
+                            <div class="notification-item unread">
+                                <div class="notification-text">Meeting reminder at 3 PM</div>
+                                <div class="notification-time">2 hours ago</div>
+                            </div>
+
+                            <div class="notification-item">
+                                <div class="notification-text">Welcome to our app!</div>
+                                <div class="notification-time">1 day ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-profile d-md-flex gap-2 position-relative d-none">
                         <img src="./assets/images/profile.png" alt="profile-img" class="profile-img">
-                        <button class="profile-btn bg-transaprent">
+                        <button class="profile-btn bg-transaprent" id="profile-dropdown-btn">
                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -71,6 +142,40 @@
                                     fill="white" />
                             </svg>
                         </button>
+                        <div class="profile-dropdown" id="profiledropdown">
+                            <ul>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center gap-2">
+                                        <svg class="icon profile-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="#6b7280">
+                                            <path
+                                                d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9.5L21 9ZM3 9L9 9.5V7.5L3 7V9ZM15 10.5V19L13.5 21L12 19.5L10.5 21L9 19V10.5H15Z" />
+                                        </svg>
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center gap-2">
+                                        <svg class="icon settings-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="#6b7280">
+                                            <path
+                                                d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.61L12.75,4H11.25Z" />
+                                        </svg>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center gap-2">
+                                        <svg class="icon logout-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="#6b7280">
+                                            <path
+                                                d="M14.08,15.59L16.67,13H7V11H16.67L14.08,8.41L15.49,7L20.49,12L15.49,17L14.08,15.59M19,3A2,2 0 0,1 21,5V9.67L19,7.67V5H5V19H19V16.33L21,14.33V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19Z" />
+                                        </svg>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -910,6 +1015,34 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
     <script src="./assets/js/general.js"></script>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('notification-dropdown');
+            dropdown.classList.toggle('notificationdropdown-show');
+        }
+
+        // Close dropdown when clicking outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.header-message') && !event.target.closest('.notification-container')) {
+                const dropdown = document.getElementById('notification-dropdown');
+                dropdown.classList.remove('notificationdropdown-show');
+            }
+        }
+
+        // Click on notification items
+        document.querySelectorAll('.notification-item').forEach(item => {
+            item.addEventListener('click', function () {
+                if (this.classList.contains('unread')) {
+                    this.classList.remove('unread');
+                    const badge = document.getElementById('badge');
+                    const count = parseInt(badge.textContent) - 1;
+                    badge.textContent = count;
+                    if (count === 0) badge.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
     <script>
         class CategoriesSlider {

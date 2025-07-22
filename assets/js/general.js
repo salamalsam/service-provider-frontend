@@ -18,3 +18,35 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.remove('open-header-menu');
     });
 });
+
+
+const profiletoggleBtn = document.getElementById('profile-dropdown-btn');
+const dropdownDiv = document.getElementById('profiledropdown');
+
+function toggleDiv() {
+    dropdownDiv.classList.toggle('profile-dropdown-show');
+}
+
+function hideDiv() {
+    dropdownDiv.classList.remove('profile-dropdown-show');
+}
+
+function showDiv() {
+    dropdownDiv.classList.add('profile-dropdown-show');
+}
+
+profiletoggleBtn.addEventListener('click', function (e) {
+    e.stopPropagation(); // Prevent event bubbling
+    toggleDiv();
+});
+
+document.addEventListener('click', function (e) {
+    if (!profiletoggleBtn.contains(e.target) && !dropdownDiv.contains(e.target)) {
+        hideDiv();
+    }
+});
+
+dropdownDiv.addEventListener('click', function (e) {
+    e.stopPropagation();
+});
+
